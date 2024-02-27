@@ -21,18 +21,14 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
-          <header>
-            <nav>
-              <Navbar />
-            </nav>
+          <header className="m-4 flex justify-center">
+            <Navbar />
           </header>
-          <main>
-            {children}
-          </main>
+          {children}
         </ThemeProvider>
       </body>
     </html>
