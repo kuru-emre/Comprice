@@ -1,2 +1,1 @@
-# Comprice
-A B2B, open-source global marketplace.
+Django + Nextjs application

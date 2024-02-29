@@ -1,0 +1,22 @@
+# Ignore Python virtual environment files
+venv/
+.env
+
+# Ignore Django migrations
+**/migrations/
+
+# Ignore Next.js build output
+.next/
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore VSCode settings
+.vscode/
+
+# Ignore Python byte code files
+*.pyc
+
+# Ignore Mac and Windows system files
+.DS_Store
+Thumbs.db
