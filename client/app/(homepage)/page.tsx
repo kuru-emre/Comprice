@@ -3,16 +3,17 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, Input, Button } from '@/components/ui';
 
 import Link from 'next/link';
+import localFont from 'next/font/local';
+
+const lastica = localFont({ src: './../fonts/lastica.ttf' });
 
 export default function Home() {
   return (
     <>
       <section className="w-scren align-center relative flex h-[400px] justify-center overflow-hidden md:h-[600px] lg:h-[400px] ">
         <div className="flex h-full w-8/12 flex-col items-center justify-center p-4 text-white">
-          <h1 className="scroll-m-20 text-4xl font-bold tracking-tight lg:text-6xl ">Comprice</h1>
-          <h2 className="m-2 scroll-m-20 pb-2 text-2xl font-semibold tracking-tight first:mt-0">
-            Where Businesses Connect, Transact, and Thrive
-          </h2>
+          <h1 className={`text-4xl tracking-widest lg:text-6xl ${lastica.className}`}>Comprice</h1>
+          <h2 className={`m-3 text-xl tracking-widest lg:text-2xl  ${lastica.className}`}>Worldwide Trade</h2>
         </div>
         <video
           src="/videos/hero.mp4"
