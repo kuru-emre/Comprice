@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+'use client';
 
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
+import Link from 'next/link';
+
+import { Button, Input } from 'ui';
 import { Logo } from './logo';
 
 export default function FooterDemo() {
@@ -27,20 +27,6 @@ export default function FooterDemo() {
           <div className="mt-4 flex">
             <Input type="email" placeholder="Email" />
             <Button>Subscribe</Button>
-          </div>
-          <div className="mt-4 flex justify-center space-x-4 lg:mt-2">
-            <Link href={''}>
-              <Facebook />
-            </Link>
-            <Link href={''}>
-              <Twitter />
-            </Link>
-            <Link href={''}>
-              <Instagram />
-            </Link>
-            <Link href={''}>
-              <Linkedin />
-            </Link>
           </div>
         </div>
         <div className="mt-4 w-full justify-between text-center lg:flex">

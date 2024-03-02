@@ -5,17 +5,17 @@ import { usePathname } from 'next/navigation';
 
 import localFont from 'next/font/local';
 
-const lastica = localFont({ src: './../fonts/lastica.ttf' });
+const lastica = localFont({ src: './../assets/fonts/lastica.ttf' });
 
 export default function AuthTemplate({ children }: Readonly<{ children: React.ReactNode }>) {
   const path = usePathname();
 
   function backgroundImg(path: string) {
     if (path == '/register') {
-      return `order-last text-end bg-[url('/images/register.jpg')] `;
+      return `order-last text-end bg-register`;
     }
 
-    return `order-first bg-[url('/images/login.jpg')] `;
+    return `order-first bg-auth`;
   }
 
   return (

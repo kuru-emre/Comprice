@@ -1,12 +1,11 @@
 'use client';
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle, Input, Button, Tabs } from '@/components/ui';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, Input, Button, HeroParallax } from 'ui';
 import Link from 'next/link';
 import localFont from 'next/font/local';
-import { HeroParallax } from '@/components/ui/hero-parallax';
-import { categories } from './../assets/hero-parallax-images';
+import { categories } from 'assets/hero-parallax-images';
 
-const lastica = localFont({ src: './../fonts/lastica.ttf' });
+const lastica = localFont({ src: './../assets/fonts/lastica.ttf' });
 
 export default function Home() {
   return (

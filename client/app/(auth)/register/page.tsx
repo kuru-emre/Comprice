@@ -4,17 +4,7 @@ import Link from 'next/link';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-  Button,
-  Input
-} from '@/components/ui';
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, Button, Input } from 'ui';
 
 const formSchema = z.object({
   username: z.string().min(2).max(50),
