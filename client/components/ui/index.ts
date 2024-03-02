@@ -35,3 +35,5 @@ export {
   DropdownMenuSubTrigger,
   DropdownMenuRadioGroup
 } from './dropdown-menu';
+
+export { Tabs, FadeInDiv } from './tabs';

@@ -7,7 +7,7 @@ export default function HomeTemplate({ children }: Readonly<{ children: React.Re
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ easeInOut, duration: 0.75 }}
+      transition={{ easeInOut, duration: 0.25 }}
     >
       {children}
     </motion.div>

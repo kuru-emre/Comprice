@@ -1,10 +1,8 @@
+import FooterDemo from '@/components/footer';
 import { Logo } from '@/components/logo';
 import { Navbar } from '@/components/navbar';
 import { Profile } from '@/components/profile';
 import { ThemeSwitcher } from '@/components/theme-switcher';
-import localFont from 'next/font/local';
-
-const lastica = localFont({ src: './../fonts/lastica.ttf' });
 
 export default function HomeLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -20,6 +18,9 @@ export default function HomeLayout({ children }: Readonly<{ children: React.Reac
         </div>
       </header>
       <main>{children}</main>
+      <footer className="w-full border-t-2">
+        <FooterDemo />
+      </footer>
     </div>
   );
 }
