@@ -2,9 +2,9 @@
 
 import localFont from 'next/font/local';
 import Link from 'next/link';
-import { Button } from './ui';
+import { Button } from 'ui';
 
-const lastica = localFont({ src: './../app/fonts/lastica.ttf' });
+const lastica = localFont({ src: './../app/assets/fonts/lastica.ttf' });
 
 export function Logo() {
   return (

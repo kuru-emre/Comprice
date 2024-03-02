@@ -1,8 +1,8 @@
-import FooterDemo from '@/components/footer';
-import { Logo } from '@/components/logo';
-import { Navbar } from '@/components/navbar';
-import { Profile } from '@/components/profile';
-import { ThemeSwitcher } from '@/components/theme-switcher';
+import FooterDemo from 'components/footer';
+import { Logo } from 'components/logo';
+import { Navbar } from 'components/navbar';
+import { Profile } from 'components/profile';
+import { ThemeSwitcher } from 'components/theme-switcher';
 
 export default function HomeLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (

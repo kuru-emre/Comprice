@@ -1,6 +1,6 @@
 'use client';
 
-import { Button, Input } from '@/components/ui';
+import { Button, Input } from 'ui';
 import Link from 'next/link';
 
 export default function Login() {

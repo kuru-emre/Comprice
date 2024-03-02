@@ -72,9 +72,15 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out'
       },
       backgroundImage: {
-        'navbar-ship': "linear-gradient(to bottom, var(--tw-gradient-stops)), url('/images/ship.jpg')",
-        'navbar-supplies': "linear-gradient(to bottom right, var(--tw-gradient-stops)), url('/images/supplies.jpg')",
-        'navbar-demands': "linear-gradient(to bottom right, var(--tw-gradient-stops)), url('/images/demands.jpg')"
+        'navbar-ship':
+          "linear-gradient(to bottom, var(--tw-gradient-stops)), url('https://images.unsplash.com/photo-1576423596782-8c5478efd11f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        'navbar-supplies':
+          "linear-gradient(to bottom right, var(--tw-gradient-stops)), url('https://images.unsplash.com/photo-1600009723489-027195d6b3d3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        'navbar-demands':
+          "linear-gradient(to bottom right, var(--tw-gradient-stops)), url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        auth: "url('https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        register:
+          "url('https://images.unsplash.com/photo-1547895749-888a559fc2a7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"
       }
     }
   },
