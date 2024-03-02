@@ -1,8 +1,6 @@
 'use client';
 
-import { Tabs } from '@/components/ui';
-import { NextPage } from 'next';
-import React from 'react';
+import { Tabs } from 'ui';
 
 const tabs = [
   {
@@ -34,12 +32,10 @@ const tabs = [
   }
 ];
 
-const Marketplace: NextPage = () => {
+export default function Marketplace() {
   return (
     <div className="flex h-[20rem] w-1/2 max-w-5xl flex-col items-start justify-start">
       <Tabs tabs={tabs} />
     </div>
   );
-};
-
-export default Marketplace;
+}
