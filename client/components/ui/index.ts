@@ -37,3 +37,5 @@ export {
 } from './dropdown-menu';
 
 export { Tabs, FadeInDiv } from './tabs';
+
+export { Header, ProductCard, HeroParallax } from './hero-parallax';

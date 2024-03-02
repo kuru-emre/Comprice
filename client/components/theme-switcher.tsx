@@ -3,7 +3,7 @@
 import { useTheme } from 'next-themes';
 import { Sun, Moon } from 'lucide-react';
 
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, Button } from '@/components/ui';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger, Button } from 'ui';
 
 export function ThemeSwitcher() {
   const { setTheme } = useTheme();

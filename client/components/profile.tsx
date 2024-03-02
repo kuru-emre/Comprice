@@ -8,7 +8,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle
-} from '@/components/ui';
+} from 'ui';
 import { LogIn, UserPlus } from 'lucide-react';
 
 export function Profile() {
