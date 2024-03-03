@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { Button, Input } from 'ui';
 import { Logo } from './logo';
 
-export default function FooterDemo() {
+export function Footer() {
   return (
-    <>
+    <footer className='border-t-2 shadow-inner'>
       <div
         className="container mx-auto flex flex-col
         flex-wrap
@@ -86,6 +86,6 @@ export default function FooterDemo() {
       <div className="-mt-12 flex justify-center">
         <p className="pb-2 text-center">@2024 All rights reserved by your website.</p>
       </div>
-    </>
+    </footer>
   );
 }

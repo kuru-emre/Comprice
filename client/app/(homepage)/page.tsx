@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       {/* Start Main Hero */}
-      <section className="w-scren align-center relative flex h-[400px] justify-center  md:h-[600px] lg:h-[400px] ">
+      <section className="w-scren align-center relative flex h-[400px] justify-center border-b-2 md:h-[600px] lg:h-[400px] ">
         <div className="flex h-full w-8/12 flex-col items-center justify-center p-4 text-white">
           <h1 className={`text-4xl tracking-widest lg:text-6xl ${lastica.className}`}>Comprice</h1>
           <h2 className={`m-3 text-xl tracking-widest lg:text-2xl  ${lastica.className}`}>Worldwide Trade</h2>
@@ -42,9 +42,9 @@ export default function Home() {
       </section>
       {/* End Main Hero */}
 
-      {/* Start Hero Parallax */}
       <section className="relative flex w-full flex-col bg-grid-black/[0.2] dark:bg-grid-white/[0.2]">
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+        {/* Start Hero Parallax */}
         <section className="w-full">
           <HeroParallax products={categories} />
         </section>
@@ -57,16 +57,16 @@ export default function Home() {
             developers and designers that love to build amazing products.
           </p>
         </section>
-      </section>
-      {/* End Hero Parallax */}
-
-      {/* Start Info */}
-      <section className="w-full p-4">
-        <div className="flex w-full gap-4">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        {/* End Hero Parallax */}
+        
+        {/* Start Info */}
+        <section className="w-full p-4">
+          <div className="flex w-full gap-4">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </section>
       </section>
     </>
   );
