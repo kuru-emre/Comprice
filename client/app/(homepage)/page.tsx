@@ -23,7 +23,7 @@ export default function Home() {
           loop
           className="absolute top-0 -z-10 h-full w-full object-cover brightness-50"
         />
-        <Card className="absolute -bottom-24 z-10 w-1/3 shadow-xl">
+        <Card className="absolute -bottom-24 z-10 w-[90%] lg:w-1/3 shadow-xl">
           <CardHeader>
             <CardTitle>Let&apos;s get started quickly</CardTitle>
             <CardDescription>Search your desired item</CardDescription>
