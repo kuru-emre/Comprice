@@ -4,8 +4,8 @@ import { Tabs } from 'ui';
 
 const tabs = [
   {
-    title: 'Product',
-    value: 'product',
+    title: 'Supplies',
+    value: 'supplies',
     content: (
       <div className="relative h-full w-full overflow-hidden rounded-2xl bg-secondary p-10 text-xl font-bold md:text-4xl">
         <p>Product Tab</p>
@@ -13,8 +13,8 @@ const tabs = [
     )
   },
   {
-    title: 'Services',
-    value: 'services',
+    title: 'Demands',
+    value: 'demands',
     content: (
       <div className="relative h-full w-full overflow-hidden rounded-2xl bg-secondary p-10 text-xl font-bold md:text-4xl">
         <p>Services tab</p>
@@ -22,8 +22,8 @@ const tabs = [
     )
   },
   {
-    title: 'Playground',
-    value: 'playground',
+    title: 'Your Postings',
+    value: 'posts',
     content: (
       <div className="relative h-full w-full overflow-hidden rounded-2xl bg-secondary p-10 text-xl font-bold md:text-4xl">
         <p>Playground tab</p>
