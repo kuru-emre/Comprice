@@ -12,7 +12,7 @@ export default function Login() {
       <Button asChild variant="ghost" className="absolute right-4 top-4">
         <Link href="/register">Register</Link>
       </Button>
-      <div className="flex h-auto w-1/3 flex-col items-center justify-center gap-4">
+      <div className="flex h-auto w-[80%] flex-col items-center justify-center gap-4 p-12 lg:w-1/3 bg-background rounded-md lg:bg-none lg:p-0">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Sign into your account</h3>
         <small className="text-sm font-medium leading-none text-muted-foreground">
           Enter your email below to login to your account
