@@ -7,7 +7,7 @@ import { Logo } from './logo';
 
 export function Footer() {
   return (
-    <footer className='border-t-2 shadow-inner'>
+    <footer className="border-t-2 shadow-inner">
       <div
         className="container mx-auto flex flex-col
         flex-wrap
@@ -21,8 +21,8 @@ export function Footer() {
         <div className="mx-auto w-64 flex-shrink-0 text-center md:mx-0 md:text-left">
           <Logo />
           <p className="mt-2 text-sm">
-            Footer is a valuable resource that complements the main content of the website by providing quick links,
-            legal information, and ways to connect, creating a well-rounded and user-friendly experience for visitors.
+            Footer is a valuable resource that complements the main content of the website by providing quick links, legal
+            information, and ways to connect, creating a well-rounded and user-friendly experience for visitors.
           </p>
           <div className="mt-4 flex">
             <Input type="email" placeholder="Email" />

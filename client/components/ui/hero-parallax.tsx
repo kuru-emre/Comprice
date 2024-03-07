@@ -24,7 +24,7 @@ export const HeroParallax = ({ products }: { products: { title: string; link: st
   return (
     <div
       ref={ref}
-      className="relative flex h-[200vh] flex-col self-auto overflow-hidden pb-20 pt-24  lg:pt-40 antialiased [perspective:800px] [transform-style:preserve-3d]"
+      className="relative flex h-[200vh] flex-col self-auto overflow-hidden pb-20 pt-24  antialiased [perspective:800px] [transform-style:preserve-3d] lg:pt-40"
     >
       <Header />
       <motion.div
@@ -36,12 +36,12 @@ export const HeroParallax = ({ products }: { products: { title: string; link: st
         }}
         className="-z-10"
       >
-        <motion.div className="mb-4 flex flex-row-reverse space-x-4 space-x-reverse lg:mb-16 lg:space-x-16">
+        <motion.div className="mb-16 flex flex-row-reverse space-x-16 space-x-reverse">
           {firstRow.map((product) => (
             <ProductCard product={product} translate={translateX} key={product.title} />
           ))}
         </motion.div>
-        <motion.div className="mb-4 flex flex-row space-x-5 lg:mb-16 lg:space-x-16 ">
+        <motion.div className="mb-16 flex flex-row space-x-16 ">
           {secondRow.map((product) => (
             <ProductCard product={product} translate={translateXReverse} key={product.title} />
           ))}
@@ -56,8 +56,8 @@ export const Header = () => {
     <div className="relative left-0 top-0 mx-auto w-full max-w-7xl px-4 py-20 md:py-40">
       <h1 className="text-2xl font-bold  md:text-7xl">More than 70 sectors</h1>
       <p className="mt-4 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
-        Get Noticed by Potential Customers with Our HS Code Catalog System. Create Your Own Demand, Find Your New
-        Business Partners
+        Get Noticed by Potential Customers with Our HS Code Catalog System. Create Your Own Demand, Find Your New Business
+        Partners
       </p>
     </div>
   );

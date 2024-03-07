@@ -1,5 +1,3 @@
 export function BottomNavbar() {
-  return (
-    <div className="fixed w-full h-[80px] bg-background border-t-2 shadow-inner z-20 lg:hidden bottom-0">bottom-navbar</div>
-  )
+  return <div className="fixed bottom-0 z-20 h-[80px] w-full border-t-2 bg-background shadow-inner lg:hidden">bottom-navbar</div>;
 }

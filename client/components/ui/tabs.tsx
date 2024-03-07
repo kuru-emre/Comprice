@@ -3,48 +3,30 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from 'lib/utils';
+import { TabType, TabsType, FadeInDivType } from 'types';
 
-type Tab = {
-  title: string;
-  value: string;
-  content?: string | React.ReactNode | any;
-};
-
-export const Tabs = ({
-  tabs: propTabs,
-  containerClassName,
-  activeTabClassName,
-  tabClassName,
-  contentClassName
-}: {
-  tabs: Tab[];
-  containerClassName?: string;
-  activeTabClassName?: string;
-  tabClassName?: string;
-  contentClassName?: string;
-}) => {
-  const [active, setActive] = useState<Tab>(propTabs[0]);
-  const [tabs, setTabs] = useState<Tab[]>(propTabs);
+export const Tabs = (props: TabsType) => {
+  const [active, setActive] = useState<TabType>(props.tabs[0]);
+  const [tabs, setTabs] = useState<TabType[]>(props.tabs);
+  const [hovering, setHovering] = useState(false);
 
   const moveSelectedTabToTop = (idx: number) => {
-    const newTabs = [...propTabs];
+    const newTabs = [...props.tabs];
     const selectedTab = newTabs.splice(idx, 1);
     newTabs.unshift(selectedTab[0]);
     setTabs(newTabs);
     setActive(newTabs[0]);
   };
 
-  const [hovering, setHovering] = useState(false);
-
   return (
     <>
       <div
         className={cn(
-          'no-visible-scrollbar relative flex w-full max-w-full gap-4 flex-row items-center justify-start overflow-auto [perspective:1000px] sm:overflow-visible px-4',
-          containerClassName
+          'no-visible-scrollbar relative flex w-full max-w-full flex-row items-center justify-start gap-4 overflow-auto px-4 [perspective:1000px] sm:overflow-visible',
+          props.containerClass
         )}
       >
-        {propTabs.map((tab, idx) => (
+        {props.tabs.map((tab, idx) => (
           <button
             key={tab.title}
             onClick={() => {
@@ -52,7 +34,7 @@ export const Tabs = ({
             }}
             onMouseEnter={() => setHovering(true)}
             onMouseLeave={() => setHovering(false)}
-            className={cn('relative rounded-md bg-background border shadow-md -top-7 px-8 py-2', tabClassName)}
+            className={cn('relative -top-7 rounded-md border bg-background px-8 py-2 shadow-md', props.tabClass)}
             style={{
               transformStyle: 'preserve-3d'
             }}
@@ -61,7 +43,7 @@ export const Tabs = ({
               <motion.div
                 layoutId="clickedbutton"
                 transition={{ type: 'spring', bounce: 0.5, duration: 0.5 }}
-                className={cn('absolute inset-0 rounded-md m-1 bg-muted', activeTabClassName)}
+                className={cn('absolute inset-0 m-1 rounded-md bg-muted', props.activeTabClass)}
               />
             )}
 
@@ -69,47 +51,32 @@ export const Tabs = ({
           </button>
         ))}
       </div>
-      <FadeInDiv
-        tabs={tabs}
-        active={active}
-        key={active.value}
-        hovering={hovering}
-        className={cn('mt-16', contentClassName)}
-      />
+      <FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={props.contentClass} />
     </>
   );
 };
 
-export const FadeInDiv = ({
-  className,
-  tabs,
-  hovering
-}: {
-  className?: string;
-  key?: string;
-  tabs: Tab[];
-  active: Tab;
-  hovering?: boolean;
-}) => {
-  const isActive = (tab: Tab) => {
-    return tab.value === tabs[0].value;
+export const FadeInDiv = (props: FadeInDivType) => {
+  const isActive = (tab: TabType) => {
+    return tab.value === props.tabs[0].value;
   };
+
   return (
     <div className="relative h-full w-full">
-      {tabs.map((tab, idx) => (
+      {props.tabs.map((tab, idx) => (
         <motion.div
           key={tab.value}
           layoutId={tab.value}
           style={{
             scale: 1 - idx * 0.1,
-            top: hovering ? idx * -40 : 0,
+            top: props.hovering ? idx * -40 : 0,
             zIndex: -idx,
             opacity: idx < 3 ? 1 - idx * 0.1 : 0
           }}
           animate={{
             y: isActive(tab) ? [0, 40, 0] : 0
           }}
-          className={cn('absolute left-0 top-0 h-full w-full', className)}
+          className={cn('absolute left-0 top-0 h-full w-full', props.className)}
         >
           {tab.content}
         </motion.div>

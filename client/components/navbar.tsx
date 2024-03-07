@@ -18,7 +18,7 @@ import { LogIn, UserPlus } from 'lucide-react';
 
 export function Navbar() {
   return (
-    <div className="hidden fixed bg-background z-20 border-b-2 w-full justify-between p-4 lg:flex">
+    <div className="fixed z-20 hidden w-full justify-between border-b-2 bg-background p-4 lg:flex">
       <div className="flex flex-1 justify-start">
         <Logo />
       </div>
@@ -35,9 +35,7 @@ export function Navbar() {
                       href="/"
                     >
                       <div className="mb-2 mt-4 text-lg font-medium">Marketplace</div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Browse through the catalog to see the demands
-                      </p>
+                      <p className="text-sm leading-tight text-muted-foreground">Browse through the catalog to see the demands</p>
                     </a>
                   </NavigationMenuLink>
                 </li>
@@ -64,9 +62,7 @@ export function Navbar() {
                       href="/"
                     >
                       <div className="mb-2 mt-4 text-lg font-medium">Supplies</div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Browse through the catalog to see the demands
-                      </p>
+                      <p className="text-sm leading-tight text-muted-foreground">Browse through the catalog to see the demands</p>
                     </a>
                   </NavigationMenuLink>
                 </li>
@@ -77,9 +73,7 @@ export function Navbar() {
                       href="/"
                     >
                       <div className="mb-2 mt-4 text-lg font-medium">Demands</div>
-                      <p className="text-sm leading-tight text-muted-foreground">
-                        Browse through the catalog to see the demands
-                      </p>
+                      <p className="text-sm leading-tight text-muted-foreground">Browse through the catalog to see the demands</p>
                     </a>
                   </NavigationMenuLink>
                 </li>

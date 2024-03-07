@@ -2,10 +2,7 @@
 
 import { easeInOut, motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
-
-import localFont from 'next/font/local';
-
-const lastica = localFont({ src: './../assets/fonts/lastica.ttf' });
+import { LasticaFont } from 'lib';
 
 export default function AuthTemplate({ children }: Readonly<{ children: React.ReactNode }>) {
   const path = usePathname();
@@ -35,8 +32,8 @@ export default function AuthTemplate({ children }: Readonly<{ children: React.Re
         className={`absolute -z-10 h-full w-full bg-cover p-4 text-white lg:relative lg:block lg:w-1/2 ${backgroundImg(path)}`}
       >
         <div className="hidden lg:block lg:w-full lg:p-4">
-          <h1 className={`text-xl tracking-widest lg:text-4xl ${lastica.className}`}>Comprice</h1>
-          <h2 className={`lg:text-md mt-1 text-sm tracking-widest ${lastica.className}`}>Worldwide Trade</h2>
+          <h1 className={`text-xl tracking-widest lg:text-4xl ${LasticaFont.className}`}>Comprice</h1>
+          <h2 className={`lg:text-md mt-1 text-sm tracking-widest ${LasticaFont.className}`}>Worldwide Trade</h2>
         </div>
       </motion.div>
     </div>

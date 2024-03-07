@@ -7,7 +7,7 @@ export default function HomeLayout({ children }: Readonly<{ children: React.Reac
     <div className="w-full">
       <Navbar />
       <BottomNavbar />
-      <main className='lg:pt-[68px]'>{children}</main>
+      <main className="lg:pt-[68px]">{children}</main>
       <Footer />
     </div>
   );
