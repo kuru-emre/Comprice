@@ -13,7 +13,8 @@ export {
   NavigationMenuTrigger,
   NavigationMenuLink,
   NavigationMenuIndicator,
-  NavigationMenuViewport
+  NavigationMenuViewport,
+  ListItem
 } from './navigation-menu';
 
 export { useFormField, Form, FormItem, FormLabel, FormControl, FormDescription, FormMessage, FormField } from './form';

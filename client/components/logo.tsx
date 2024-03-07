@@ -1,15 +1,11 @@
-'use client';
-
-import localFont from 'next/font/local';
-import Link from 'next/link';
+import { LasticaFont } from 'lib';
 import { Button } from 'ui';
-
-const lastica = localFont({ src: './../app/assets/fonts/lastica.ttf' });
+import Link from 'next/link';
 
 export function Logo() {
   return (
     <Button asChild variant="ghost">
-      <Link href="/" className={`tracking-widest lg:text-xl ${lastica.className}`}>
+      <Link href="/" className={`tracking-widest lg:text-xl ${LasticaFont.className}`}>
         Comprice
       </Link>
     </Button>

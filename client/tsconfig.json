@@ -19,10 +19,11 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "assets/*": ["app/assets/*"],
+      "assets/*": ["components/assets/*"],
       "ui": ["components/ui"],
       "lib/*": ["lib/*"],
-      "components/*": ["components/*"]
+      "components/*": ["components/*"],
+      "types/*": ["types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

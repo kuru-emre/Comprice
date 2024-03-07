@@ -3,7 +3,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform, useSpring, MotionValue } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export const HeroParallax = ({ products }: { products: { title: string; link: string; thumbnail: string }[] }) => {
   const firstRow = products.slice(0, 5);
@@ -25,7 +24,7 @@ export const HeroParallax = ({ products }: { products: { title: string; link: st
   return (
     <div
       ref={ref}
-      className="relative flex h-[200vh] flex-col self-auto overflow-hidden pb-20 pt-40 antialiased [perspective:800px] [transform-style:preserve-3d]"
+      className="relative flex h-[200vh] flex-col self-auto overflow-hidden pb-20 pt-24  antialiased [perspective:800px] [transform-style:preserve-3d] lg:pt-40"
     >
       <Header />
       <motion.div
@@ -57,8 +56,8 @@ export const Header = () => {
     <div className="relative left-0 top-0 mx-auto w-full max-w-7xl px-4 py-20 md:py-40">
       <h1 className="text-2xl font-bold  md:text-7xl">More than 70 sectors</h1>
       <p className="mt-4 max-w-2xl text-base dark:text-neutral-200 md:text-xl">
-        Get Noticed by Potential Customers with Our HS Code Catalog System. Create Your Own Demand, Find Your New
-        Business Partners
+        Get Noticed by Potential Customers with Our HS Code Catalog System. Create Your Own Demand, Find Your New Business
+        Partners
       </p>
     </div>
   );
@@ -84,19 +83,19 @@ export const ProductCard = ({
         y: -20
       }}
       key={product.title}
-      className="group/product relative h-96 w-[30rem] flex-shrink-0 shadow-2xl"
+      className="group/product relative h-24 w-[10rem] flex-shrink-0 shadow-2xl lg:h-96 lg:w-[30rem]"
     >
-      <Link href={product.link} className="block group-hover/product:shadow-2xl">
-        <Image
-          src={product.thumbnail}
-          height="600"
-          width="600"
-          className="absolute inset-0 h-full w-full rounded-md object-cover object-left-top"
-          alt={product.title}
-        />
-      </Link>
-      <div className="pointer-events-none absolute inset-0 h-full w-full rounded-md bg-black opacity-20 group-hover/product:opacity-80"></div>
-      <h2 className="absolute bottom-4 left-4 text-white opacity-0 group-hover/product:opacity-100">{product.title}</h2>
+      <Image
+        src={product.thumbnail}
+        height="600"
+        width="600"
+        className="absolute inset-0 h-full w-full rounded-md object-cover object-left-top"
+        alt={product.title}
+      />
+      <div className="pointer-events-none absolute inset-0 h-full w-full rounded-md bg-black opacity-20 group-hover/product:opacity-70"></div>
+      <span className="absolute bottom-[50%] w-full text-center text-2xl text-white opacity-0 group-hover/product:opacity-100">
+        {product.title}
+      </span>
     </motion.div>
   );
 };

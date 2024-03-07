@@ -1,4 +1,4 @@
-export const categories = [
+export const ParallaxImg = [
   {
     title: 'Healthcare',
     link: 'https://gomoonbeam.com',
