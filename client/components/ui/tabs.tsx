@@ -1,86 +1,55 @@
-'use client';
+"use client"
 
-import { useState } from 'react';
-import { motion } from 'framer-motion';
-import { cn } from 'lib/utils';
-import { TabType, TabsType, FadeInDivType } from 'types';
+import * as React from "react"
+import * as TabsPrimitive from "@radix-ui/react-tabs"
 
-export const Tabs = (props: TabsType) => {
-  const [active, setActive] = useState<TabType>(props.tabs[0]);
-  const [tabs, setTabs] = useState<TabType[]>(props.tabs);
-  const [hovering, setHovering] = useState(false);
+import { cn } from "lib"
 
-  const moveSelectedTabToTop = (idx: number) => {
-    const newTabs = [...props.tabs];
-    const selectedTab = newTabs.splice(idx, 1);
-    newTabs.unshift(selectedTab[0]);
-    setTabs(newTabs);
-    setActive(newTabs[0]);
-  };
+const Tabs = TabsPrimitive.Root
 
-  return (
-    <>
-      <div
-        className={cn(
-          'no-visible-scrollbar relative flex w-full max-w-full flex-row items-center justify-start gap-4 overflow-auto px-4 [perspective:1000px] sm:overflow-visible',
-          props.containerClass
-        )}
-      >
-        {props.tabs.map((tab, idx) => (
-          <button
-            key={tab.title}
-            onClick={() => {
-              moveSelectedTabToTop(idx);
-            }}
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-            className={cn('relative -top-7 rounded-md border bg-background px-8 py-2 shadow-md', props.tabClass)}
-            style={{
-              transformStyle: 'preserve-3d'
-            }}
-          >
-            {active.value === tab.value && (
-              <motion.div
-                layoutId="clickedbutton"
-                transition={{ type: 'spring', bounce: 0.5, duration: 0.5 }}
-                className={cn('absolute inset-0 m-1 rounded-md bg-muted', props.activeTabClass)}
-              />
-            )}
+const TabsList = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.List>,
+  React.ComponentPropsWithoutRef<typeof TabsPrimitive.List>
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.List
+    ref={ref}
+    className={cn(
+      "inline-flex h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground",
+      className
+    )}
+    {...props}
+  />
+))
+TabsList.displayName = TabsPrimitive.List.displayName
 
-            <span className="relative block">{tab.title}</span>
-          </button>
-        ))}
-      </div>
-      <FadeInDiv tabs={tabs} active={active} key={active.value} hovering={hovering} className={props.contentClass} />
-    </>
-  );
-};
+const TabsTrigger = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Trigger>
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.Trigger
+    ref={ref}
+    className={cn(
+      "inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow",
+      className
+    )}
+    {...props}
+  />
+))
+TabsTrigger.displayName = TabsPrimitive.Trigger.displayName
 
-export const FadeInDiv = (props: FadeInDivType) => {
-  const isActive = (tab: TabType) => {
-    return tab.value === props.tabs[0].value;
-  };
+const TabsContent = React.forwardRef<
+  React.ElementRef<typeof TabsPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof TabsPrimitive.Content>
+>(({ className, ...props }, ref) => (
+  <TabsPrimitive.Content
+    ref={ref}
+    className={cn(
+      "mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
+      className
+    )}
+    {...props}
+  />
+))
+TabsContent.displayName = TabsPrimitive.Content.displayName
 
-  return (
-    <div className="relative h-full w-full">
-      {props.tabs.map((tab, idx) => (
-        <motion.div
-          key={tab.value}
-          layoutId={tab.value}
-          style={{
-            scale: 1 - idx * 0.1,
-            top: props.hovering ? idx * -40 : 0,
-            zIndex: -idx,
-            opacity: idx < 3 ? 1 - idx * 0.1 : 0
-          }}
-          animate={{
-            y: isActive(tab) ? [0, 40, 0] : 0
-          }}
-          className={cn('absolute left-0 top-0 h-full w-full', props.className)}
-        >
-          {tab.content}
-        </motion.div>
-      ))}
-    </div>
-  );
-};
+export { Tabs, TabsList, TabsTrigger, TabsContent }

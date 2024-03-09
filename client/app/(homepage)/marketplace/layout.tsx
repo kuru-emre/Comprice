@@ -1,37 +1,31 @@
 'use client';
 
+import { TabsContent, TabsList, TabsTrigger } from 'components/ui/tabs';
 import { MarketplaceLayoutType } from 'types';
 import { Tabs } from 'ui';
-import { LasticaFont } from 'lib';
 
 export default function MarketplaceLayout({ children, demands, supplies, posts }: MarketplaceLayoutType) {
   return (
     <div className="w-full">
-      <section className="border-b-2 bg-[url(https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]  bg-cover p-20">
-        <h1 className={`text-center text-2xl tracking-widest text-white lg:text-4xl ${LasticaFont.className}`}>Marketplace</h1>
-      </section>
-      <section className="flex">
-        <aside className="h-[500px] w-1/4">{children}</aside>
-        <div className="h-[20rem] w-3/4">
-          <Tabs
-            tabs={[
-              {
-                title: 'Supplies',
-                value: 'supplies',
-                content: supplies
-              },
-              {
-                title: 'Demands',
-                value: 'demands',
-                content: demands
-              },
-              {
-                title: 'Your Postings',
-                value: 'posts',
-                content: posts
-              }
-            ]}
-          />
+      {children}
+      <section className="flex h-full">
+        <div className="lg:h-[1000px] w-full">
+          <Tabs defaultValue="supplies" className="w-full relative max-sm:p-4">
+            <TabsList className="grid lg:w-[450px] grid-cols-3 lg:absolute lg:top-4 lg:left-3">
+              <TabsTrigger value="supplies">Supplies</TabsTrigger>
+              <TabsTrigger value="demands">Demands</TabsTrigger>
+              <TabsTrigger value="posts">My Postings</TabsTrigger>
+            </TabsList>
+
+            <div className="flex flex-col lg:flex-row lg:h-[1000px] w-full px-2">
+              <div className="w-full lg:w-[450px] h-full lg:border-r-2 lg:mx-4 lg:pt-16">sadasd</div>
+              <div className="flex-grow h-full ">
+                <TabsContent value="supplies">{supplies}</TabsContent>
+                <TabsContent value="demands">{demands}</TabsContent>
+                <TabsContent value="posts">{posts}</TabsContent>
+              </div>
+            </div>
+          </Tabs>
         </div>
       </section>
     </div>
