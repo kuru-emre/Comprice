@@ -23,7 +23,8 @@
       "ui": ["components/ui"],
       "lib/*": ["lib/*"],
       "components/*": ["components/*"],
-      "types/*": ["types/*"]
+      "types/*": ["types/*"],
+      "styles": ["styles/globals.css"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

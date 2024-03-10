@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { ThemeProvider } from 'components/theme-provider';
 import { InterFont } from 'lib';
-import './globals.css';
+import 'styles';
 
 export const metadata: Metadata = {
   title: 'Comprice',
