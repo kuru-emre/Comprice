@@ -8,18 +8,18 @@ export default function MarketplaceLayout({ children, demands, supplies, posts }
   return (
     <div className="w-full">
       {children}
-      <section className="flex h-full lg:w-[80%] m-auto">
-        <div className="lg:h-[1000px] w-full">
-          <Tabs defaultValue="supplies" className="w-full relative max-sm:p-4">
-            <TabsList className="grid lg:w-[450px] grid-cols-3 lg:absolute lg:top-8 lg:left-3">
+      <section className="m-auto flex h-full lg:w-[80%]">
+        <div className="w-full lg:h-[1000px]">
+          <Tabs defaultValue="supplies" className="relative w-full max-sm:p-4">
+            <TabsList className="grid grid-cols-3 lg:absolute lg:left-3 lg:top-8 lg:w-[450px]">
               <TabsTrigger value="supplies">Supplies</TabsTrigger>
               <TabsTrigger value="demands">Demands</TabsTrigger>
               <TabsTrigger value="posts">My Postings</TabsTrigger>
             </TabsList>
 
-            <div className="flex flex-col lg:flex-row lg:h-[1000px] w-full px-2">
-              <div className="w-full lg:w-[450px] h-full lg:border-r-2 lg:mx-4 lg:pt-20">sadasd</div>
-              <div className="flex-grow h-full ">
+            <div className="flex w-full flex-col px-2 lg:h-[1000px] lg:flex-row">
+              <div className="h-full w-full lg:mx-4 lg:w-[450px] lg:border-r-2 lg:pt-20">sadasd</div>
+              <div className="h-full flex-grow ">
                 <TabsContent value="supplies">{supplies}</TabsContent>
                 <TabsContent value="demands">{demands}</TabsContent>
                 <TabsContent value="posts">{posts}</TabsContent>
