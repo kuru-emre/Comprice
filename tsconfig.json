@@ -20,7 +20,6 @@
     "baseUrl": "./src/",
     "paths": {
       "assets/*": ["components/assets/*"],
-      "ui": ["components/ui"],
       "lib/*": ["lib/*"],
       "components/*": ["components/*"],
       "types/*": ["types/*"],

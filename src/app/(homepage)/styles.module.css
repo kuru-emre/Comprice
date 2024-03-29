@@ -1,0 +1,29 @@
+.hero {
+  height: 400px;
+  position: relative;
+  justify-content: center;
+}
+
+.heroVideo {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.heroStack {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.heroCard {
+  position: absolute;
+  bottom: -120px;
+  z-index: 10;
+}

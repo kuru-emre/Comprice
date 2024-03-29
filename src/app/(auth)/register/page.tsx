@@ -1,85 +1,30 @@
 'use client';
 
-import Link from 'next/link';
-import { z } from 'zod';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage, Button, Input } from 'ui';
-
-const formSchema = z.object({
-  username: z.string().min(2).max(50),
-  email: z.string().email(),
-  pswd: z.string().min(8),
-  pswd_confirm: z.string()
-});
+import { Paper, TextInput, PasswordInput, Checkbox, Button, Title, Text, Anchor } from '@mantine/core';
+import classes from './styles.module.css';
 
 export default function Register() {
-  // 1. Define your form.
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      username: ''
-    }
-  });
-
-  // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
-  }
-
   return (
-    <>
-      <Button asChild variant="ghost" className="absolute left-4 top-4 max-sm:text-white">
-        <Link href="/login">Login</Link>
-      </Button>
-      <Button asChild variant="ghost" className="absolute right-4 top-4 max-sm:text-white">
-        <Link href="/">Return home</Link>
-      </Button>
-      <div className="flex h-auto w-[80%] flex-col items-center justify-center gap-4 rounded-md bg-background p-12 lg:w-2/3 lg:bg-none lg:p-0">
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Start seeing the benefits</h3>
-        <small className="text-center text-sm  font-medium text-muted-foreground">
-          Follow the steps below to start registering on the plaftorm
-        </small>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-            <div className="flex gap-4">
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Email address" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="username"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Username</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Username" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
+    <div className={classes.wrapper}>
+      <Paper className={classes.form} radius={0} p={30}>
+        <Title order={2} className={classes.title} ta="center" mt="md" mb={50}>
+          Welcome back to Mantine!
+        </Title>
 
-            <Button type="submit">Submit</Button>
-          </form>
-        </Form>
-        <small className="text-center text-sm font-medium text-muted-foreground">
-          By clicking continue, you agree to our Terms of Service and Privacy Policy.
-        </small>
-      </div>
-    </>
+        <TextInput label="Email address" placeholder="hello@gmail.com" size="md" />
+        <PasswordInput label="Password" placeholder="Your password" mt="md" size="md" />
+        <Checkbox label="Keep me logged in" mt="xl" size="md" />
+        <Button fullWidth mt="xl" size="md">
+          Login
+        </Button>
+
+        <Text ta="center" mt="md">
+          Don&apos;t have an account?{' '}
+          <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()}>
+            Register
+          </Anchor>
+        </Text>
+      </Paper>
+    </div>
   );
 }

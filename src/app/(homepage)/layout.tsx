@@ -1,13 +1,10 @@
-import { Footer } from 'components/footer';
-import { Navbar } from 'components/navbar';
-import { BottomNavbar } from 'components/bottom-navbar';
+import { Footer, Header } from 'components';
 
 export default function HomeLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <div className="w-full">
-      <Navbar />
-      <BottomNavbar />
-      <main className="lg:pt-[68px]">{children}</main>
+      <Header />
+      <main>{children}</main>
       <Footer />
     </div>
   );

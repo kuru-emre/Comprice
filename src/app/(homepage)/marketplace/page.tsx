@@ -1,4 +1,4 @@
-import { LasticaFont } from 'lib';
+import { LasticaFont } from 'libs';
 
 export default function Marketplace() {
   return (
