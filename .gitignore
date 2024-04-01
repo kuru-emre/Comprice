@@ -5,7 +5,12 @@
 node_modules/
 
 # Ignore VSCode settings
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
 # Ignore Mac and Windows system files
 .DS_Store

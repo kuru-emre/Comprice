@@ -1,4 +1,4 @@
-export { default as prisma } from './db';
+export { default as prisma } from './db/db';
 
 export { ParallaxImg } from './parallax-images';
 

@@ -25,6 +25,7 @@
     "extends": "next/core-web-vitals"
   },
   "dependencies": {
+    "@lucia-auth/adapter-prisma": "^4.0.1",
     "@mantine/core": "^7.7.0",
     "@mantine/hooks": "^7.7.0",
     "@prisma/client": "^5.10.2",
@@ -32,8 +33,9 @@
     "bcrypt-ts": "^5.0.2",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
+    "lucia": "^3.1.1",
     "next": "14.1.0",
-    "next-auth": "^4.24.7",
+    "oslo": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "zod": "^3.22.4"
@@ -45,15 +47,14 @@
     "autoprefixer": "^10.4.18",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
-    "mini-svg-data-uri": "^1.4.4",
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "^1.13.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "prisma": "^5.10.2",
-    "tailwindcss": "^3.4.1",
     "tailwind-merge": "^2.2.1",
+    "tailwindcss": "^3.4.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }
