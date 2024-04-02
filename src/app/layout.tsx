@@ -1,8 +1,7 @@
-import type { Metadata } from 'next';
-import { InterFont } from 'libs/fonts';
-import 'styles';
-import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
+import type { Metadata } from 'next';
+import { theme } from 'libs';
+import 'styles';
 
 export const metadata: Metadata = {
   title: 'Comprice',
@@ -15,8 +14,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <ColorSchemeScript />
       </head>
-      <body className={InterFont.className}>
-        <MantineProvider defaultColorScheme="dark">{children}</MantineProvider>
+      <body>
+        <MantineProvider theme={theme}>{children}</MantineProvider>
       </body>
     </html>
   );

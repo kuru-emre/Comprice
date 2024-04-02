@@ -8,7 +8,7 @@ const Text = () => {
   return (
     <div className="relative left-0 top-0 mx-auto w-full max-w-7xl px-4 py-20 md:py-40">
       <h1 className="text-2xl font-bold  md:text-7xl">More than 70 sectors</h1>
-      <p className="mt-4 max-w-2xl text-base md:text-xl dark:text-neutral-200">
+      <p className="mt-4 max-w-2xl md:text-xl">
         Get Noticed by Potential Customers with Our HS Code Catalog System. Create Your Own Demand, Find Your New Business
         Partners
       </p>
@@ -22,7 +22,6 @@ const ProductCard = ({
 }: {
   product: {
     title: string;
-    link: string;
     thumbnail: string;
   };
   translate: MotionValue<number>;
@@ -53,7 +52,7 @@ const ProductCard = ({
   );
 };
 
-export const HeroParallax = ({ products }: { products: { title: string; link: string; thumbnail: string }[] }) => {
+export const HeroParallax = ({ products }: { products: { title: string; thumbnail: string }[] }) => {
   const firstRow = products.slice(0, 5);
   const secondRow = products.slice(5, 10);
   const ref = React.useRef(null);

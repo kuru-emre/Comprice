@@ -31,6 +31,7 @@ import {
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
 import { Logo } from 'components/standalone';
+import Link from 'next/link';
 
 const mockdata = [
   {
@@ -65,7 +66,7 @@ const mockdata = [
   }
 ];
 
-export function Header() {
+export default function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
@@ -148,8 +149,12 @@ export function Header() {
           </Group>
 
           <Group visibleFrom="sm">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            <Button component={Link} href="/login" variant="default">
+              Log in
+            </Button>
+            <Button component={Link} href="/register">
+              Sign up
+            </Button>
           </Group>
 
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
@@ -190,8 +195,12 @@ export function Header() {
           <Divider my="sm" />
 
           <Group justify="center" grow pb="xl" px="md">
-            <Button variant="default">Log in</Button>
-            <Button>Sign up</Button>
+            <Button component={Link} href="/login" variant="default">
+              Log in
+            </Button>
+            <Button component={Link} href="register">
+              Sign up
+            </Button>
           </Group>
         </ScrollArea>
       </Drawer>

@@ -1,4 +1,4 @@
-import { Container, Flex, Center, Text, Group, Box, Stack, Title, Card, Paper, Input, Space } from '@mantine/core';
+import { Container, Flex, Text, Box, Stack, Title, Paper, Input, Space } from '@mantine/core';
 import { HeroParallax } from 'components';
 import { ParallaxImg, LasticaFont } from 'libs';
 import classes from './styles.module.css';
@@ -24,17 +24,16 @@ export default function Home() {
       </Flex>
       {/* End Main Hero */}
 
-      <section className="relative flex w-full flex-col bg-grid-black/[0.2] dark:bg-grid-white/[0.2]">
-        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+      <section className="bg-grid-black/[0.2] dark:bg-grid-white/[0.2] relative flex w-full flex-col">
         {/* Start Hero Parallax */}
         <section className="w-full">
           <HeroParallax products={ParallaxImg} />
         </section>
         <section className="h-[500px] w-full">
-          <h2 className="text-2xl font-bold md:text-7xl dark:text-white">
+          <h2 className="text-2xl font-bold md:text-7xl ">
             Comprices <br /> more than 70 sectors
           </h2>
-          <p className="mt-8 max-w-2xl text-base md:text-xl dark:text-neutral-200">
+          <p className="mt-8 max-w-2xl md:text-xl ">
             We build beautiful products with the latest technologies and frameworks. We are a team of passionate developers and
             designers that love to build amazing products.
           </p>

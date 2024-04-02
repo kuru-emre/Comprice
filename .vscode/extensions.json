@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "vunguyentuan.vscode-css-variables",
+        "dsznajder.es7-react-js-snippets",
+        "dbaeumer.vscode-eslint",
+        "visualstudioexptteam.vscodeintellicode",
+        "vunguyentuan.vscode-postcss",
+        "esbenp.prettier-vscode",
+        "prisma.prisma",
+        "bradlc.vscode-tailwindcss"
+    ]
+}

@@ -34,7 +34,7 @@ const data = [
   }
 ];
 
-export function Footer() {
+export default function Footer() {
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
       <Text<'a'> key={index} className={classes.link} component="a" href={link.link} onClick={(event) => event.preventDefault()}>
