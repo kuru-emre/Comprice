@@ -19,3 +19,4 @@ Thumbs.db
 # Environmental files
 .env
 .env.*
+!.env.example

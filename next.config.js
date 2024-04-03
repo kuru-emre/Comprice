@@ -1,6 +1,10 @@
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
 /** @type {import('next').NextConfig} */
 
-module.exports = {
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -17,3 +21,5 @@ module.exports = {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   }
 }
+
+module.exports = withBundleAnalyzer(nextConfig)
