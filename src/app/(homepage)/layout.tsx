@@ -1,5 +1,6 @@
 import { Footer, Header } from "components"
 import { Metadata } from "next";
+import { Box } from "@mantine/core"
 
 export const metadata: Metadata = {
   title: 'Marketplace',
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
 
 export default function HomeLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="w-full">
+    <Box>
       <Header />
       <main>{children}</main>
       <Footer />
-    </div>
+    </Box>
   );
 }

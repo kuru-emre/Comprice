@@ -1,18 +1,18 @@
 import { Sidebar, Companies } from 'components';
 import { LasticaFont } from 'libs';
+import {Box, Container, Flex} from "@mantine/core"
+import classes from "./styles.module.css"
 
 export default function Marketplace() {
   return (
-    <>
-      <section className="border-b-2 bg-[url(https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover lg:p-20">
+    <Box>
+      <Container fluid className={classes.header}>
         <h1 className={`text-center text-3xl tracking-widest text-white lg:text-4xl ${LasticaFont.className}`}>Marketplace</h1>
-      </section>
-      <aside>
+      </Container>
+      <Flex >
         <Sidebar />
-      </aside>
-      <section>
         <Companies />
-      </section>
-    </>
+      </Flex>
+    </Box>
   );
 }

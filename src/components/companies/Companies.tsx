@@ -99,7 +99,7 @@ export default function Companies() {
   ));
 
   return (
-    <Table.ScrollContainer minWidth={800}>
+    <Table.ScrollContainer minWidth={800} w="100%">
       <Table verticalSpacing="md">
         <Table.Tbody>{rows}</Table.Tbody>
       </Table>
