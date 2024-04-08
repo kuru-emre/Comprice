@@ -1,9 +1,6 @@
-import { Title } from '@mantine/core'
-import React from 'react'
+import { Title } from '@mantine/core';
+import React from 'react';
 
 export default function Loading() {
-  return (
-    <Title>Loding</Title>
-  )
+  return <Title>Loding</Title>;
 }
-
