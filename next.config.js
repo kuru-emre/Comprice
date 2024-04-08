@@ -1,3 +1,7 @@
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+})
+
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
@@ -8,7 +12,14 @@ const nextConfig = {
         hostname: 'images.unsplash.com'
       }
     ]
+  },
+  webpack: (config) => {
+    config.externals.push('@node-rs/argon2', '@node-rs/bcrypt');
+    return config;
+  },
+  experimental: {
+    optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   }
-};
+}
 
-module.exports = nextConfig;
+module.exports = withBundleAnalyzer(nextConfig)

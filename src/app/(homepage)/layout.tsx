@@ -1,14 +1,18 @@
-import { Footer } from 'components/footer';
-import { Navbar } from 'components/navbar';
-import { BottomNavbar } from 'components/bottom-navbar';
+import { Footer, Header } from "components"
+import { Metadata } from "next";
+import { Box } from "@mantine/core"
+
+export const metadata: Metadata = {
+  title: 'Marketplace',
+  description: 'Global demand and supplies',
+}
 
 export default function HomeLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="w-full">
-      <Navbar />
-      <BottomNavbar />
-      <main className="lg:pt-[68px]">{children}</main>
+    <Box>
+      <Header />
+      <main>{children}</main>
       <Footer />
-    </div>
+    </Box>
   );
 }

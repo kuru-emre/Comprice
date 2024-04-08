@@ -1,7 +1,8 @@
+import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import type { Metadata } from 'next';
-import { ThemeProvider } from 'components/theme-provider';
-import { InterFont } from 'lib';
+import { theme } from 'libs';
 import 'styles';
+import {Maintenance} from 'components';
 
 export const metadata: Metadata = {
   title: 'Comprice',
@@ -11,10 +12,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={InterFont.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          {children}
-        </ThemeProvider>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body>
+        <MantineProvider theme={theme}>
+          {process.env.MAINTENANCE === 'true' ? <Maintenance /> : children}
+        </MantineProvider>
       </body>
     </html>
   );

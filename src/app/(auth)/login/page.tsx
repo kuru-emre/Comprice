@@ -1,31 +1,30 @@
 'use client';
 
-import { Button, Input } from 'ui';
-import Link from 'next/link';
+import { Paper, TextInput, PasswordInput, Checkbox, Button, Title, Text, Anchor } from '@mantine/core';
+import classes from './styles.module.css';
 
 export default function Login() {
   return (
-    <>
-      <Button asChild variant="ghost" className="absolute left-4 top-4 max-sm:text-white">
-        <Link href="/">Return home</Link>
-      </Button>
-      <Button asChild variant="ghost" className="absolute right-4 top-4 max-sm:text-white">
-        <Link href="/register">Register</Link>
-      </Button>
-      <div className="flex h-auto w-[80%] flex-col items-center justify-center gap-4 rounded-md bg-background p-12 lg:w-1/3 lg:bg-none lg:p-0">
-        <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight">Sign into your account</h3>
-        <small className="text-sm font-medium leading-none text-muted-foreground">
-          Enter your email below to login to your account
-        </small>
-        <Input type="email" placeholder="Email" />
-        <Input type="password" placeholder="Password" />
-        <Button asChild className="w-full">
-          <Link href="/login">Login</Link>
+    <div className={classes.wrapper}>
+      <Paper className={classes.form} radius={0} p={30}>
+        <Title order={2} className={classes.title} ta="center" mt="md" mb={50}>
+          Welcome back to Mantine!
+        </Title>
+
+        <TextInput label="Email address" placeholder="hello@gmail.com" size="md" />
+        <PasswordInput label="Password" placeholder="Your password" mt="md" size="md" />
+        <Checkbox label="Keep me logged in" mt="xl" size="md" />
+        <Button fullWidth mt="xl" size="md">
+          Login
         </Button>
-        <small className="text-center text-sm font-medium text-muted-foreground">
-          By clicking continue, you agree to our Terms of Service and Privacy Policy.
-        </small>
-      </div>
-    </>
+
+        <Text ta="center" mt="md">
+          Don&apos;t have an account?{' '}
+          <Anchor<'a'> href="#" fw={700} onClick={(event) => event.preventDefault()}>
+            Register
+          </Anchor>
+        </Text>
+      </Paper>
+    </div>
   );
 }

@@ -1,11 +1,16 @@
 # Ignore Next.js build output
-.next/
+.next
 
 # Ignore node_modules directory
 node_modules/
 
 # Ignore VSCode settings
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
 # Ignore Mac and Windows system files
 .DS_Store
@@ -14,3 +19,4 @@ Thumbs.db
 # Environmental files
 .env
 .env.*
+!.env.example
