@@ -84,12 +84,12 @@ export const HeroParallax = ({ products }: { products: { title: string; thumbnai
         }}
         className="-z-10"
       >
-        <motion.div className="mb-16 flex flex-row-reverse space-x-16 space-x-reverse">
+        <motion.div className="mb-10 flex flex-row-reverse space-x-10 space-x-reverse">
           {firstRow.map((product) => (
             <ProductCard product={product} translate={translateX} key={product.title} />
           ))}
         </motion.div>
-        <motion.div className="mb-16 flex flex-row space-x-16 ">
+        <motion.div className="mb-10 flex flex-row space-x-10">
           {secondRow.map((product) => (
             <ProductCard product={product} translate={translateXReverse} key={product.title} />
           ))}

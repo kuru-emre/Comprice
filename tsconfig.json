@@ -23,6 +23,7 @@
       "libs/*": ["src/libs/*"],
       "components": ["src/components"],
       "components/*": ["src/components/*"],
+      "server/*": ["src/server/*"],
       "styles": ["public/styles/globals.css"]
     }
   },
