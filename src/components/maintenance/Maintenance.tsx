@@ -7,6 +7,7 @@ import classes from './Maintenance.module.css';
 import { LasticaFont } from 'libs';
 import { useForm } from '@mantine/form';
 import { z } from 'zod';
+import { notifications } from '@mantine/notifications';
 
 const schema = z.object({
   fname: z.string().min(2, { message: 'Must have at least 2 letters' }),
@@ -31,9 +32,11 @@ export default function Maintenance() {
 
   function handleSubmit() {
     if (form.isValid()) {
-      sendEmail(form.values);
-    } else {
-      form.errors;
+      sendEmail();
+      notifications.show({
+        title: 'Email Sent Notification',
+        message: 'We successfully reveived your message!'
+      });
     }
   }
 

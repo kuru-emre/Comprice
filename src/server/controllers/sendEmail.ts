@@ -5,7 +5,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function sendEmail(params: FormData) {
+export async function sendEmail() {
   try {
     const data = await resend.emails.send({
       from: 'Comprice Info <onboarding@resend.dev>',

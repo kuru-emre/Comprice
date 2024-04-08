@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState } from 'react';
 import { SegmentedControl, Text } from '@mantine/core';
@@ -18,7 +18,7 @@ import {
   IconReceipt2,
   IconReceiptRefund,
   IconLogout,
-  IconSwitchHorizontal,
+  IconSwitchHorizontal
 } from '@tabler/icons-react';
 import classes from './Sidebar.module.css';
 
@@ -30,7 +30,7 @@ const tabs = {
     { link: '', label: 'SSH Keys', icon: IconKey },
     { link: '', label: 'Databases', icon: IconDatabaseImport },
     { link: '', label: 'Authentication', icon: Icon2fa },
-    { link: '', label: 'Other Settings', icon: IconSettings },
+    { link: '', label: 'Other Settings', icon: IconSettings }
   ],
   general: [
     { link: '', label: 'Orders', icon: IconShoppingCart },
@@ -39,8 +39,8 @@ const tabs = {
     { link: '', label: 'Messages', icon: IconMessages },
     { link: '', label: 'Customers', icon: IconUsers },
     { link: '', label: 'Refunds', icon: IconReceiptRefund },
-    { link: '', label: 'Files', icon: IconFileAnalytics },
-  ],
+    { link: '', label: 'Files', icon: IconFileAnalytics }
+  ]
 };
 
 export default function Sidebar() {
@@ -77,7 +77,7 @@ export default function Sidebar() {
           fullWidth
           data={[
             { label: 'Account', value: 'account' },
-            { label: 'System', value: 'general' },
+            { label: 'System', value: 'general' }
           ]}
         />
       </div>
