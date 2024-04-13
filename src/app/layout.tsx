@@ -2,7 +2,7 @@ import { ColorSchemeScript, MantineColorsTuple, MantineProvider, createTheme } f
 import { Notifications } from '@mantine/notifications';
 import type { Metadata } from 'next';
 import { Maintenance } from 'components';
-import { InterFont } from 'libs/fonts';
+import { InterFont } from 'libs';
 import 'styles';
 
 const myColor: MantineColorsTuple = [

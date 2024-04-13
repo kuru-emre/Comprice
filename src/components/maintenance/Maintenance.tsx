@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Button, Center, Stack, Flex, Group, TextInput, Divider } from '@mantine/core';
+import { Box, Button, Center, Stack, Flex, Group, TextInput } from '@mantine/core';
 import { zodResolver } from 'mantine-form-zod-resolver';
 import { sendEmail } from 'server/controllers';
 import classes from './Maintenance.module.css';
