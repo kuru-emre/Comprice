@@ -7,7 +7,8 @@
     "build": "prisma generate && next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ./src/"
+    "format": "prettier --write ./src/",
+    "migrate": "prisma migrate dev"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
@@ -25,21 +26,16 @@
     "extends": "next/core-web-vitals"
   },
   "dependencies": {
-    "@lucia-auth/adapter-prisma": "^4.0.1",
     "@mantine/core": "^7.7.0",
     "@mantine/form": "^7.7.1",
     "@mantine/hooks": "^7.7.0",
     "@mantine/notifications": "^7.7.1",
-    "@next/bundle-analyzer": "^14.1.4",
     "@prisma/client": "^5.10.2",
     "@tabler/icons-react": "^3.1.0",
-    "bcrypt-ts": "^5.0.2",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
-    "lucia": "^3.1.1",
     "mantine-form-zod-resolver": "^1.1.0",
     "next": "14.1.0",
-    "oslo": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "resend": "^3.2.0",

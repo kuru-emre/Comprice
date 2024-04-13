@@ -1,10 +1,6 @@
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
-
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {
+module.exports = {
   images: {
     remotePatterns: [
       {
@@ -13,13 +9,7 @@ const nextConfig = {
       }
     ]
   },
-  webpack: (config) => {
-    config.externals.push('@node-rs/argon2', '@node-rs/bcrypt');
-    return config;
-  },
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   }
 }
-
-module.exports = withBundleAnalyzer(nextConfig)
