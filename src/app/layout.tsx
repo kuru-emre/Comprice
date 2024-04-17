@@ -3,7 +3,8 @@ import { Notifications } from '@mantine/notifications';
 import type { Metadata } from 'next';
 import { Maintenance } from 'components';
 import { InterFont } from 'libs';
-import 'styles';
+import '@mantine/core/styles.css';
+import '@mantine/notifications/styles.css';
 
 const myColor: MantineColorsTuple = [
   '#ffe9f1',

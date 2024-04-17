@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write ./src/",
-    "migrate": "prisma migrate dev"
+    "migrate": "prisma migrate dev",
+    "env": "shx cp .env.example .env"
   },
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
@@ -17,10 +18,7 @@
     "semi": true,
     "trailingComma": "none",
     "singleQuote": true,
-    "printWidth": 130,
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
+    "printWidth": 130
   },
   "eslintConfig": {
     "extends": "next/core-web-vitals"
@@ -32,7 +30,6 @@
     "@mantine/notifications": "^7.7.1",
     "@prisma/client": "^5.10.2",
     "@tabler/icons-react": "^3.1.0",
-    "clsx": "^2.1.0",
     "framer-motion": "^11.0.8",
     "mantine-form-zod-resolver": "^1.1.0",
     "next": "14.1.0",
@@ -45,17 +42,14 @@
     "@types/node": "^20.11.24",
     "@types/react": "^18.2.63",
     "@types/react-dom": "^18.2.20",
-    "autoprefixer": "^10.4.18",
     "eslint": "^8.57.0",
     "eslint-config-next": "14.1.0",
     "postcss": "^8.4.38",
     "postcss-preset-mantine": "^1.13.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11",
     "prisma": "^5.10.2",
-    "tailwind-merge": "^2.2.1",
-    "tailwindcss": "^3.4.1",
+    "shx": "^0.3.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
   }

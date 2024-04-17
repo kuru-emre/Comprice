@@ -30,7 +30,6 @@ import {
   IconChevronDown
 } from '@tabler/icons-react';
 import classes from './Header.module.css';
-import { Logo } from 'components/standalone';
 import Link from 'next/link';
 
 const mockdata = [
@@ -93,7 +92,9 @@ export default function Header() {
     <Box>
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
-          <Logo />
+          <Link href="/" className={`text-xl font-light tracking-widest no-underline`}>
+            Comprice
+          </Link>
 
           <Group h="100%" gap={0} visibleFrom="sm">
             <a href="#" className={classes.link}>
