@@ -27,7 +27,7 @@ export default function Navbar() {
     <header className="absolute inset-x-0 top-0 z-30 flex justify-center">
       <motion.nav
         style={{ backgroundColor, padding, margin, width, borderRadius }}
-        className="transtion-all fixed flex items-center justify-between p-6 drop-shadow-xl duration-300 lg:px-8"
+        className="transition-all ease-in-out fixed flex items-center justify-between p-6 drop-shadow-xl duration-200 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
