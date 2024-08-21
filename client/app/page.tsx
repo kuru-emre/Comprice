@@ -56,21 +56,22 @@ export default function MainPage() {
           src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           fill={true}
+          priority={true}
           className="absolute inset-0 -z-20 h-full w-full object-cover brightness-[0.35]"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-gray-900" aria-hidden="true"></div>
-        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 px-2">
           <div className="text-center">
             <h1 className="font-lastica text-4xl font-light tracking-widest text-white sm:text-6xl lg:text-5xl">Simplifying B2B Trade</h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">Empowering Businesses to Connect, Trade, and Thrive with HS Code Integration in a Unified Marketplace.</p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
-                className="rounded-full bg-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-opacity-50 hover:backdrop-blur-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+                className="rounded-full bg-violet-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:bg-opacity-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
               >
                 Get started
               </a>
-              <a href="#" className="rounded-full px-3.5 py-2.5 text-sm font-semibold leading-6 text-white transition-all duration-300 hover:backdrop-blur-lg">
+              <a href="#" className="rounded-full px-3.5 py-2.5 text-sm font-semibold leading-6 text-white transition-all duration-300">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>

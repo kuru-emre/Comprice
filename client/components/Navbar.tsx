@@ -17,17 +17,16 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
-  const backgroundColor = useTransform(scrollY, [0, 100], ['', 'rgba(3, 7, 18, 0.7)']);
+  const backgroundColor = useTransform(scrollY, [0, 100], ['', 'rgba(3, 7, 18, 0.8)']);
   const padding = useTransform(scrollY, [0, 100], ['', '8px 15px']);
   const margin = useTransform(scrollY, [0, 100], ['', '20px']);
   const width = useTransform(scrollY, [0, 100], ['100%', '90%']);
   const borderRadius = useTransform(scrollY, [0, 100], ['0', '9999px']);
-  const backdropFilter = useTransform(scrollY, [0, 100], ['0', 'blur(4px)']);
 
   return (
     <header className="absolute inset-x-0 top-0 z-30 flex justify-center">
       <motion.nav
-        style={{ backgroundColor, padding, margin, width, borderRadius, backdropFilter }}
+        style={{ backgroundColor, padding, margin, width, borderRadius }}
         className="transtion-all fixed flex items-center justify-between p-6 drop-shadow-xl duration-300 lg:px-8"
         aria-label="Global"
       >
@@ -48,7 +47,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="rounded-full border border-transparent px-4 py-2 text-sm font-semibold leading-6 text-white transition-all duration-300 hover:border-gray-800 hover:text-violet-400 hover:backdrop-blur-sm"
+              className="rounded-full border border-transparent px-4 py-2 text-sm font-semibold leading-6 text-white transition-all duration-300 hover:border-gray-800 hover:text-violet-400"
             >
               {item.name}
             </a>

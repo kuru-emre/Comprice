@@ -78,9 +78,7 @@ export default function MarketplacePage() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-gray-900" aria-hidden="true"></div>
 
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-32">
-          <div className="text-center">
-            <h1 className="font-lastica text-4xl font-light tracking-widest text-white sm:text-6xl lg:text-5xl">Marketplace</h1>
-          </div>
+            <h1 className="font-lastica text-3xl font-light tracking-widest text-center text-white sm:text-3xl lg:text-5xl">Marketplace</h1>
         </div>
       </div>
       <div>
@@ -151,9 +149,9 @@ export default function MarketplacePage() {
           </div>
         </Dialog>
 
-        <main className="mx-6 px-4 sm:px-6 lg:px-8">
+        <main className="px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-700 py-6">
-            <h1 className="font-nomarl font-lastica text-3xl tracking-widest">Companies</h1>
+            <h1 className="font-normal font-lastica text-lg lg:text-2xl tracking-widest">Companies</h1>
 
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
