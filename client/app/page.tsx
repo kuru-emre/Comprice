@@ -60,7 +60,7 @@ export default function MainPage() {
           className="absolute inset-0 -z-20 h-full w-full object-cover brightness-[0.35]"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-gray-900" aria-hidden="true"></div>
-        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56 px-2">
+        <div className="mx-auto max-w-4xl px-2 py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="font-lastica text-4xl font-light tracking-widest text-white sm:text-6xl lg:text-5xl">Simplifying B2B Trade</h1>
             <p className="mt-6 text-lg leading-8 text-gray-300">Empowering Businesses to Connect, Trade, and Thrive with HS Code Integration in a Unified Marketplace.</p>
