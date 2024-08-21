@@ -1,0 +1,12 @@
+# Process compose for starting django
+version: "0.5"
+
+processes:
+  django:
+    command: server/manage.py runserver
+    availability:
+      restart: "always"
+  nextjs:
+    command: npm --prefix client run dev
+    availability:
+      restart: "always"
