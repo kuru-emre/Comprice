@@ -17,17 +17,19 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
 
-  const backgroundColor = useTransform(scrollY, [0, 100], ['', 'rgba(3, 7, 18, 0.8)']);
-  const padding = useTransform(scrollY, [0, 100], ['', '8px 15px']);
-  const margin = useTransform(scrollY, [0, 100], ['', '20px']);
-  const width = useTransform(scrollY, [0, 100], ['100%', '90%']);
-  const borderRadius = useTransform(scrollY, [0, 100], ['0', '9999px']);
+  const transforms = {
+    backgroundColor: useTransform(scrollY, [0, 100], ['', 'rgba(3, 7, 18, 0.8)']),
+    padding: useTransform(scrollY, [0, 100], ['', '8px 15px']),
+    margin: useTransform(scrollY, [0, 100], ['', '20px']),
+    width: useTransform(scrollY, [0, 100], ['100%', '90%']),
+    borderRadius: useTransform(scrollY, [0, 100], ['0', '9999px']),
+  };
 
   return (
     <header className="absolute inset-x-0 top-0 z-30 flex justify-center">
       <motion.nav
-        style={{ backgroundColor, padding, margin, width, borderRadius }}
-        className="transition-all ease-in-out fixed flex items-center justify-between p-6 drop-shadow-xl duration-200 lg:px-8"
+        style={transforms}
+        className="fixed flex items-center justify-between p-6 drop-shadow-xl transition-all duration-500 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
