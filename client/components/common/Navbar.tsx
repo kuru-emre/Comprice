@@ -50,7 +50,7 @@ export default function Navbar() {
                 >
                   {item.sub ? (
                     <>
-                      <NavigationMenu.Trigger className='group flex select-none items-center justify-between gap-[4px] font-medium'>
+                      <NavigationMenu.Trigger className='group flex select-none items-center justify-between gap-[4px] font-medium text-white'>
                         {item.name}
                         <ChevronUpIcon className="h-4 w-4 relative transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden />
                       </NavigationMenu.Trigger>
