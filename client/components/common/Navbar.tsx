@@ -8,8 +8,8 @@ import * as Dialog from '@radix-ui/react-dialog';
 
 const navigation = [
   { name: 'Company Catalog', href: '#' },
-  { name: 'Trade News', href: '/marketplace' },
   { name: 'Create Demand', href: '#', sub: [{ name: 'Exports', href: '#' }, { name: 'Imports', href: '#' }] },
+  { name: 'Trade News', href: '/marketplace' },
   { name: 'Trading Guide', href: '#', sub: [{ name: 'Incoterms', href: '#' }, { name: 'Insurance in Trade', href: '#' }, { name: 'Payment Methods', href: '#' }] },
   { name: 'About Us', href: '#', sub: [{ name: 'Who We Are', href: '#' }, { name: 'Contact Us', href: '#' }, { name: 'Q&A', href: '#' }] },
 ];
@@ -56,7 +56,7 @@ export default function Navbar() {
                       </NavigationMenu.Trigger>
 
                       <NavigationMenu.Content className='data-[motion=from-start]:animate-enterFromLeft data-[motion=from-end]:animate-enterFromRight data-[motion=to-start]:animate-exitToLeft data-[motion=to-end]:animate-exitToRight absolute top-0 left-0 w-full sm:w-auto'>
-                        <NavigationMenu.Sub className="p-3 w-[390px]">
+                        <NavigationMenu.Sub className="p-3 w-[500px]">
                           <NavigationMenu.List className='flex gap-2 justify-around w-full '>
                             {item.sub.map((subItem) => (
                               <NavigationMenu.Link key={subItem.name} href={subItem.href} className='text-gray-900 hover:text-violet-600'>
