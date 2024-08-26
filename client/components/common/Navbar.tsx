@@ -31,7 +31,7 @@ export default function Navbar() {
 
       <Dialog.Root>
         <motion.div style={transforms} className='fixed transition-all duration-300 ease-in-out p-6 lg:px-8'>
-          <NavigationMenu.Root className='w-full flex items-center justify-between'>
+          <NavigationMenu.Root className='w-full flex items-center justify-between text-white'>
             <NavigationMenu.Item className="flex flex-1">
               <NavigationMenu.Link href="#" className="-m-1.5 p-1.5">
                 <Logo />
@@ -50,7 +50,7 @@ export default function Navbar() {
                 >
                   {item.sub ? (
                     <>
-                      <NavigationMenu.Trigger className='group flex select-none items-center justify-between gap-[4px] font-medium text-white'>
+                      <NavigationMenu.Trigger className='group flex select-none items-center justify-between gap-[4px] font-medium'>
                         {item.name}
                         <ChevronUpIcon className="h-4 w-4 relative transition-transform duration-[250] ease-in group-data-[state=open]:-rotate-180" aria-hidden />
                       </NavigationMenu.Trigger>
