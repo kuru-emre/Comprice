@@ -1,13 +1,19 @@
-'use client';
-
-import { CloudArrowUpIcon, QrCodeIcon, ChatBubbleLeftRightIcon, GlobeAltIcon, LockClosedIcon, RocketLaunchIcon, ServerIcon } from '@heroicons/react/24/outline';
-
+import {
+  CloudArrowUpIcon,
+  QrCodeIcon,
+  ChatBubbleLeftRightIcon,
+  GlobeAltIcon,
+  LockClosedIcon,
+  RocketLaunchIcon,
+  ServerIcon,
+} from '@heroicons/react/24/outline';
 import Image from 'next/image';
 
 const features1 = [
   {
     name: 'Universal HS Code Search',
-    description: 'Effortlessly search for products using HS codes, ensuring accurate categorization and compliance with international trade standards',
+    description:
+      'Effortlessly search for products using HS codes, ensuring accurate categorization and compliance with international trade standards',
     icon: QrCodeIcon,
   },
   {
@@ -17,7 +23,8 @@ const features1 = [
   },
   {
     name: 'Seamless Communication',
-    description: 'Engage with buyers and sellers through our integrated messaging system, facilitating negotiations and fostering strong business relationships.',
+    description:
+      'Engage with buyers and sellers through our integrated messaging system, facilitating negotiations and fostering strong business relationships.',
     icon: ChatBubbleLeftRightIcon,
   },
   {
@@ -63,7 +70,9 @@ export default function MainPage() {
         <div className="mx-auto max-w-4xl px-2 py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="font-lastica text-4xl font-light tracking-widest text-white sm:text-6xl lg:text-5xl">Simplifying B2B Trade</h1>
-            <p className="mt-6 text-lg leading-8 text-gray-300">Empowering Businesses to Connect, Trade, and Thrive with HS Code Integration in a Unified Marketplace.</p>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              Empowering Businesses to Connect, Trade, and Thrive with HS Code Integration in a Unified Marketplace.
+            </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
                 href="#"
@@ -83,7 +92,9 @@ export default function MainPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:text-center">
             <p className="mt-2 font-lastica text-3xl font-normal tracking-widest text-white sm:text-4xl">Discover the Top Perks of Comprice</p>
-            <p className="mt-6 text-lg leading-8 text-gray-500">Experience the Benefits that Make Trading Seamless and Efficient on Our Marketplace.</p>
+            <p className="mt-6 text-lg leading-8 text-gray-500">
+              Experience the Benefits that Make Trading Seamless and Efficient on Our Marketplace.
+            </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
@@ -109,7 +120,9 @@ export default function MainPage() {
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
                 <p className="mt-2 font-lastica text-3xl font-normal tracking-widest text-white sm:text-4xl">How it Works</p>
-                <p className="mt-6 text-lg leading-8 text-gray-500">Get Started in 3 Simple Steps: Learn How to Create an Account, Find What You Need, and Connect with Others.</p>
+                <p className="mt-6 text-lg leading-8 text-gray-500">
+                  Get Started in 3 Simple Steps: Learn How to Create an Account, Find What You Need, and Connect with Others.
+                </p>
                 <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-500 lg:max-w-none">
                   {features2.map((feature) => (
                     <div key={feature.name} className="relative pl-9">

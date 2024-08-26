@@ -41,6 +41,8 @@ INSTALLED_APPS = [
 
     # Third-party pkgs
     'rest_framework',
+    'rest_framework.authtoken',
+    'dj_rest_auth',
     'corsheaders',
 
     # Apps

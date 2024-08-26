@@ -12,8 +12,12 @@
   "dependencies": {
     "@headlessui/react": "^2.1.2",
     "@heroicons/react": "^2.1.5",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
     "framer-motion": "^11.3.29",
+    "install": "^0.13.0",
     "next": "14.2.5",
+    "npm": "^10.8.2",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -35,7 +39,7 @@
     "typescript": "^5"
   },
   "prettier": {
-    "printWidth": 180,
+    "printWidth": 150,
     "singleQuote": true,
     "trailingComma": "es5",
     "tabWidth": 2,
