@@ -41,6 +41,18 @@ const config: Config = {
           from: { opacity: '1' },
           to: { opacity: '0' },
         },
+        slideDown: {
+          from: { height: '0px' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        slideUp: {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0px' },
+        },
+        overlayShow: {
+          from: { opacity: '0' },
+          to: { opacity: '0.5' },
+        },
       },
     },
     animation: {
@@ -52,6 +64,9 @@ const config: Config = {
       enterFromRight: 'enterFromRight 250ms ease',
       exitToLeft: 'exitToLeft 250ms ease',
       exitToRight: 'exitToRight 250ms ease',
+      slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+      slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
+      overlayShow: 'overlayShow 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards',
     },
   },
   plugins: [
