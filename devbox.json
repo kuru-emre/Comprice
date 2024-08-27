@@ -14,6 +14,15 @@
       ". $VENV_DIR/bin/activate"
     ],
     "scripts": {
+      "env": [
+        "if [ ! -f ./server/.env ]; then",
+        "  cp ./server/.env.example ./server/.env",
+        "fi",
+        "",
+        "if [ ! -f ./client/.env ]; then",
+        "  cp ./client/.env.example ./client/.env",
+        "fi"
+      ],
       "test": [
         "echo \"Error: no test specified\" && exit 1"
       ]
