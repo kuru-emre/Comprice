@@ -25,7 +25,7 @@ export default function SideFilterComponent() {
               </span>
             </DisclosureButton>
           </h3>
-          <DisclosurePanel transition className="pt-6 ease-in-out duration-300 data-[closed]:translate-y-full">
+          <DisclosurePanel transition className="pt-6 duration-300 ease-in-out data-[closed]:translate-y-full">
             <div className="space-y-4">
               {section.options.map((option, optionIdx) => (
                 <div key={option.value} className="flex items-center">
