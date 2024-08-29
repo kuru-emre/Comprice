@@ -6,17 +6,18 @@ import SideFilterComponent from '@/components/marketplace/Filters/SideFilter';
 
 export default function MarketplaceLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-main">
       <div className="relative isolate overflow-hidden pt-14">
         <Image
           src="https://images.unsplash.com/photo-1501523460185-2aa5d2a0f981?q=80&w=1862&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="marketplace"
           fill={true}
+          priority={true}
           className="absolute inset-0 -z-20 h-full w-full object-cover brightness-[0.35]"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent to-gray-900" aria-hidden="true"></div>
+        <div className="bg-gradient-light dark:bg-gradient-dark absolute inset-0 -z-10" aria-hidden="true"></div>
         <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-32">
-          <h1 className="text-center font-lastica text-3xl font-light tracking-widest text-white sm:text-3xl lg:text-5xl">Marketplace</h1>
+          <h1 className="text-main text-center font-lastica text-3xl font-light tracking-widest sm:text-3xl lg:text-5xl">Marketplace</h1>
         </div>
       </div>
       <div>
@@ -27,7 +28,7 @@ export default function MarketplaceLayout({ children }: Readonly<{ children: Rea
               <h1 className="font-lastica text-lg font-normal tracking-widest lg:text-2xl">Companies</h1>
               <div className="flex items-center">
                 <SorterComponent />
-                <button type="button" className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
+                <button type="button" className="-m-2 ml-5 p-2 sm:ml-7">
                   <span className="sr-only">View grid</span>
                   <Squares2X2Icon aria-hidden="true" className="h-5 w-5" />
                 </button>

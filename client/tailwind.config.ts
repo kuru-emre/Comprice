@@ -2,7 +2,8 @@ import type { Config } from 'tailwindcss';
 import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx,mdx}', './components/**/*.{js,ts,jsx,tsx,mdx}', './app/**/*.{js,ts,jsx,tsx,mdx}'],
+  content: ['./components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}'],
+  darkMode: 'selector',
   theme: {
     extend: {
       fontFamily: {
@@ -64,12 +65,13 @@ const config: Config = {
       enterFromRight: 'enterFromRight 250ms ease',
       exitToLeft: 'exitToLeft 250ms ease',
       exitToRight: 'exitToRight 250ms ease',
-      slideDown: 'slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-      slideUp: 'slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1)',
-      overlayShow: 'overlayShow 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards',
+      slideDown: 'slideDown 300ms ease',
+      slideUp: 'slideUp 300ms ease ',
+      overlayShow: 'overlayShow 300ms ease forwards',
     },
   },
   plugins: [
+    require('@tailwindcss/forms'),
     plugin(({ matchUtilities }) => {
       matchUtilities({
         perspective: (value) => ({
@@ -77,7 +79,6 @@ const config: Config = {
         }),
       });
     }),
-    require('@tailwindcss/forms'),
   ],
 };
 export default config;
