@@ -11,6 +11,7 @@ import { useState } from 'react';
 import { useTheme } from 'next-themes';
 import { NAVIGATION } from './navigation';
 import * as Separator from '@radix-ui/react-separator';
+import ThemeToggler from './Themer';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -60,10 +61,10 @@ export default function Navbar() {
                               <NavigationMenu.Item key={subItem.name} asChild>
                                 <NavigationMenu.Link
                                   href={subItem.href}
-                                  className="transition-co bg-accent-hover group w-full rounded-2xl p-3 font-normal"
+                                  className="transition-co bg-main-hover group w-full rounded-2xl p-3 font-normal"
                                 >
                                   <h2 className="mb-[5px] font-medium">{subItem.name}</h2>
-                                  <p className="text-gray-600 dark:text-gray-400">{subItem.desc}</p>
+                                  <p className="text-accent">{subItem.desc}</p>
                                 </NavigationMenu.Link>
                               </NavigationMenu.Item>
                             ))}
@@ -102,9 +103,13 @@ export default function Navbar() {
               <div onClick={() => setOpen(false)} className="-m-1.5 p-1.5">
                 <Logo />
               </div>
-              <Dialog.Close type="button" className="text-main -m-2.5 p-2.5">
-                <XMarkIcon className="h-6 w-6" />
-              </Dialog.Close>
+
+              <div className='flex gap-4'>
+                <ThemeToggler />
+                <Dialog.Close type="button" className="-m-2.5 p-2.5">
+                  <XMarkIcon className="text-main h-6 w-6" />
+                </Dialog.Close>
+              </div>
             </Dialog.Title>
             <Separator.Root className="bg-accent my-2 data-[orientation=horizontal]:h-px data-[orientation=vertical]:h-full data-[orientation=horizontal]:w-full data-[orientation=vertical]:w-px" />
             <Accordion.Root collapsible type="single" className="space-y-2">
@@ -130,7 +135,7 @@ export default function Navbar() {
                           {item.sub.map((subItem) => (
                             <Link
                               onClick={() => setOpen(false)}
-                              className="bg-main bg-main-hover rounded-2xl px-3 py-2"
+                              className="bg-main bg-accent-hover rounded-2xl px-3 py-2"
                               key={subItem.name}
                               href={subItem.href}
                             >
@@ -159,6 +164,7 @@ export default function Navbar() {
             >
               Log in
             </Link>
+
           </Dialog.Content>
         </Dialog.Portal>
       </Dialog.Root>

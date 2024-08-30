@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "files.exclude": {
+    "client/node_modules": true,
+    "client/.next": true,
+    "client/next-env.d.ts": true
+  }
+}
