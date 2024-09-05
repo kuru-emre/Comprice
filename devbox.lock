@@ -71,73 +71,73 @@
       }
     },
     "nodejs@latest": {
-      "last_modified": "2024-08-18T12:44:29Z",
+      "last_modified": "2024-08-31T10:12:23Z",
       "plugin_version": "0.0.2",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#nodejs_22",
+      "resolved": "github:NixOS/nixpkgs/5629520edecb69630a3f4d17d3d33fc96c13f6fe#nodejs_22",
       "source": "devbox-search",
-      "version": "22.5.1",
+      "version": "22.6.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/vbbk37g24vayjad0jzi7jyf92rbadz7l-nodejs-22.5.1",
+              "path": "/nix/store/h0lgf92wq4ip40d15mdah4548s5ck3lm-nodejs-22.6.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/yz4k4kg5spvnr5hfl0zam0180qmi82nk-nodejs-22.5.1-libv8"
+              "path": "/nix/store/cvyxkafalvlc8nymm9qghmd23lcsdq73-nodejs-22.6.0-libv8"
             }
           ],
-          "store_path": "/nix/store/vbbk37g24vayjad0jzi7jyf92rbadz7l-nodejs-22.5.1"
+          "store_path": "/nix/store/h0lgf92wq4ip40d15mdah4548s5ck3lm-nodejs-22.6.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/85ngdpilv2mdhb8b5fmqzrbnkhin7jwn-nodejs-22.5.1",
+              "path": "/nix/store/i43skcppvpbprz429nlf6xh6x6gjk1w0-nodejs-22.6.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/12a20901b329n3zj9b1a0c5swcm37yvy-nodejs-22.5.1-libv8"
+              "path": "/nix/store/1k0qb1hlhxzd45yirswq9ryzi8h2lzj7-nodejs-22.6.0-libv8"
             }
           ],
-          "store_path": "/nix/store/85ngdpilv2mdhb8b5fmqzrbnkhin7jwn-nodejs-22.5.1"
+          "store_path": "/nix/store/i43skcppvpbprz429nlf6xh6x6gjk1w0-nodejs-22.6.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/nzjjzxmab6ph0s4dprqw1b6v9piancsi-nodejs-22.5.1",
+              "path": "/nix/store/vpz3z6kvx63xiwgippddkp62vi4h8g3z-nodejs-22.6.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/xnxcqr676ffb62gkz3nwh4zyiarla7hi-nodejs-22.5.1-libv8"
+              "path": "/nix/store/k9gallbn1nij77ryg2dix2iwrrky8c4g-nodejs-22.6.0-libv8"
             }
           ],
-          "store_path": "/nix/store/nzjjzxmab6ph0s4dprqw1b6v9piancsi-nodejs-22.5.1"
+          "store_path": "/nix/store/vpz3z6kvx63xiwgippddkp62vi4h8g3z-nodejs-22.6.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/kxy4210mqs50ribr9dj2y6r03mbmjifj-nodejs-22.5.1",
+              "path": "/nix/store/gb9rkc33y0qxk8ps1wyflry1gmz2q9w8-nodejs-22.6.0",
               "default": true
             },
             {
               "name": "libv8",
-              "path": "/nix/store/ii07lzp5c0h21g1cm681bimak86np677-nodejs-22.5.1-libv8"
+              "path": "/nix/store/6v7dxcn0azh24swdv3745pfprhxcg4jr-nodejs-22.6.0-libv8"
             }
           ],
-          "store_path": "/nix/store/kxy4210mqs50ribr9dj2y6r03mbmjifj-nodejs-22.5.1"
+          "store_path": "/nix/store/gb9rkc33y0qxk8ps1wyflry1gmz2q9w8-nodejs-22.6.0"
         }
       }
     },
     "python312Packages.mysqlclient@latest": {
-      "last_modified": "2024-08-18T12:44:29Z",
-      "resolved": "github:NixOS/nixpkgs/ff1c2669bbb4d0dd9e62cc94f0968cfa652ceec1#python312Packages.mysqlclient",
+      "last_modified": "2024-08-31T10:12:23Z",
+      "resolved": "github:NixOS/nixpkgs/5629520edecb69630a3f4d17d3d33fc96c13f6fe#python312Packages.mysqlclient",
       "source": "devbox-search",
       "version": "2.2.4",
       "systems": {
@@ -145,114 +145,114 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/qkfiayhpjqxd929c4mgj22rki0fh2bis-python3.12-mysqlclient-2.2.4",
+              "path": "/nix/store/mqw5ysfbslcsp0k840mpnl6770wrf57q-python3.12-mysqlclient-2.2.4",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/jdmzmy5ziab0b5cnnx8ah3fqpqbmhyjb-python3.12-mysqlclient-2.2.4-dist"
+              "path": "/nix/store/ih37wm1z5m7ppkzvf3gmmffzccp4hf3r-python3.12-mysqlclient-2.2.4-dist"
             }
           ],
-          "store_path": "/nix/store/qkfiayhpjqxd929c4mgj22rki0fh2bis-python3.12-mysqlclient-2.2.4"
+          "store_path": "/nix/store/mqw5ysfbslcsp0k840mpnl6770wrf57q-python3.12-mysqlclient-2.2.4"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/9jk2wfwx62lxgzi9sa4phgh7xj61njxm-python3.12-mysqlclient-2.2.4",
+              "path": "/nix/store/c037gcahc0h12x0c4z9g2qwsm1vdhpcq-python3.12-mysqlclient-2.2.4",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/lx5kbkxcq0pwn6jm8pd3mj10nzk9gwn0-python3.12-mysqlclient-2.2.4-dist"
+              "path": "/nix/store/hnlwypg1mrk22v39nia951iqgyhil957-python3.12-mysqlclient-2.2.4-dist"
             }
           ],
-          "store_path": "/nix/store/9jk2wfwx62lxgzi9sa4phgh7xj61njxm-python3.12-mysqlclient-2.2.4"
+          "store_path": "/nix/store/c037gcahc0h12x0c4z9g2qwsm1vdhpcq-python3.12-mysqlclient-2.2.4"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/548rvcg62bx4k3wxnyph7wvxczkrfids-python3.12-mysqlclient-2.2.4",
+              "path": "/nix/store/wdbcmdjwf9x7sqbi36nhl9sykdai0076-python3.12-mysqlclient-2.2.4",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/4cjm4d55k0cfbxff9q4bw5av93mxda6l-python3.12-mysqlclient-2.2.4-dist"
+              "path": "/nix/store/0z2siii2wwzgrc1ych9jmkmr6ykyhqlj-python3.12-mysqlclient-2.2.4-dist"
             }
           ],
-          "store_path": "/nix/store/548rvcg62bx4k3wxnyph7wvxczkrfids-python3.12-mysqlclient-2.2.4"
+          "store_path": "/nix/store/wdbcmdjwf9x7sqbi36nhl9sykdai0076-python3.12-mysqlclient-2.2.4"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/wc1y1cicc7g87273kp3aabv67s33zksy-python3.12-mysqlclient-2.2.4",
+              "path": "/nix/store/bybbwf2h26prhfd478qbbpgic76a4ink-python3.12-mysqlclient-2.2.4",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/r6v0mxn0gzrzf18a1c66bh73jynsvs8l-python3.12-mysqlclient-2.2.4-dist"
+              "path": "/nix/store/5wr284ybyxk4j2m9ckc9h4ik134bb34h-python3.12-mysqlclient-2.2.4-dist"
             }
           ],
-          "store_path": "/nix/store/wc1y1cicc7g87273kp3aabv67s33zksy-python3.12-mysqlclient-2.2.4"
+          "store_path": "/nix/store/bybbwf2h26prhfd478qbbpgic76a4ink-python3.12-mysqlclient-2.2.4"
         }
       }
     },
     "python@latest": {
-      "last_modified": "2024-08-17T01:07:41Z",
+      "last_modified": "2024-08-31T10:12:23Z",
       "plugin_version": "0.0.3",
-      "resolved": "github:NixOS/nixpkgs/cd7b95ee3725af7113bacbce91dd6549cee58ca5#python3",
+      "resolved": "github:NixOS/nixpkgs/5629520edecb69630a3f4d17d3d33fc96c13f6fe#python3",
       "source": "devbox-search",
-      "version": "3.12.4",
+      "version": "3.12.5",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/xnm9sbp02pp2704dvx4kb8g0yxn263pn-python3-3.12.4",
+              "path": "/nix/store/75j38g8ii1nqkmpf6sdlj3s5dyah3gas-python3-3.12.5",
               "default": true
             }
           ],
-          "store_path": "/nix/store/xnm9sbp02pp2704dvx4kb8g0yxn263pn-python3-3.12.4"
+          "store_path": "/nix/store/75j38g8ii1nqkmpf6sdlj3s5dyah3gas-python3-3.12.5"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/wviq85xs5awfp75mj5sjq9mn1nkqhq12-python3-3.12.4",
+              "path": "/nix/store/ajjwc8k8sk3ksrl3dq4fsg83m1j8n8s3-python3-3.12.5",
               "default": true
             },
             {
               "name": "debug",
-              "path": "/nix/store/cglyj6nr5rcr0j9c36xqvybk5rj7hi6x-python3-3.12.4-debug"
+              "path": "/nix/store/9qvs74485a1v5255w2ps0xf4rxww6w89-python3-3.12.5-debug"
             }
           ],
-          "store_path": "/nix/store/wviq85xs5awfp75mj5sjq9mn1nkqhq12-python3-3.12.4"
+          "store_path": "/nix/store/ajjwc8k8sk3ksrl3dq4fsg83m1j8n8s3-python3-3.12.5"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/dc7kp6g4s76jlfjhjdpibjfc8pglhlcs-python3-3.12.4",
+              "path": "/nix/store/rv3rj95fxv57c7qwgl43qa7n0fabdy0a-python3-3.12.5",
               "default": true
             }
           ],
-          "store_path": "/nix/store/dc7kp6g4s76jlfjhjdpibjfc8pglhlcs-python3-3.12.4"
+          "store_path": "/nix/store/rv3rj95fxv57c7qwgl43qa7n0fabdy0a-python3-3.12.5"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/04gg5w1s662l329a8kh9xcwyp0k64v5a-python3-3.12.4",
+              "path": "/nix/store/pgb120fb7srbh418v4i2a70aq1w9dawd-python3-3.12.5",
               "default": true
             },
             {
               "name": "debug",
-              "path": "/nix/store/w2ycb82p1q4xdpm2pzcqk7k58f89wv6l-python3-3.12.4-debug"
+              "path": "/nix/store/4ws5lqhgsxdpfb924n49ma6ll7i8x0hf-python3-3.12.5-debug"
             }
           ],
-          "store_path": "/nix/store/04gg5w1s662l329a8kh9xcwyp0k64v5a-python3-3.12.4"
+          "store_path": "/nix/store/pgb120fb7srbh418v4i2a70aq1w9dawd-python3-3.12.5"
         }
       }
     }

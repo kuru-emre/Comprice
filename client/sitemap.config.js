@@ -4,4 +4,4 @@ module.exports = {
   siteUrl: 'https://compriceworld.com',
   generateRobotsTxt: true, // (optional)
   // ...other options
-}
+};

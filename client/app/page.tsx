@@ -89,24 +89,20 @@ export default function MainPage() {
       <section className="bg-main py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl lg:text-center">
-            <p className="mt-2 font-lastica text-3xl font-normal tracking-widest text-gray-900 sm:text-4xl dark:text-white">
-              Discover the Top Perks of Comprice
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-500">
-              Experience the Benefits that Make Trading Seamless and Efficient on Our Marketplace.
-            </p>
+            <p className="text-main mt-2 font-lastica text-3xl font-normal tracking-widest sm:text-4xl">Discover the Top Perks of Comprice</p>
+            <p className="text-accent mt-6 text-lg leading-8">Experience the Benefits that Make Trading Seamless and Efficient on Our Marketplace.</p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
               {features1.map((feature) => (
                 <div key={feature.name} className="relative pl-16">
-                  <dt className="text-base font-semibold leading-7 text-gray-900 dark:text-white">
-                    <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-full bg-indigo-600">
+                  <dt className="text-main text-base font-semibold leading-7">
+                    <div className="bg-primary absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-full">
                       <feature.icon aria-hidden="true" className="h-6 w-6 text-white" />
                     </div>
                     {feature.name}
                   </dt>
-                  <dd className="mt-2 text-base leading-7 text-gray-500">{feature.description}</dd>
+                  <dd className="text-accent mt-2 text-base leading-7">{feature.description}</dd>
                 </div>
               ))}
             </dl>
@@ -119,15 +115,15 @@ export default function MainPage() {
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div className="lg:pr-8 lg:pt-4">
               <div className="lg:max-w-lg">
-                <p className="mt-2 font-lastica text-3xl font-normal tracking-widest text-gray-900 sm:text-4xl dark:text-white">How it Works</p>
-                <p className="mt-6 text-lg leading-8 text-gray-500">
+                <p className="text-main mt-2 font-lastica text-3xl font-normal tracking-widest sm:text-4xl">How it Works</p>
+                <p className="text-accent mt-6 text-lg leading-8">
                   Get Started in 3 Simple Steps: Learn How to Create an Account, Find What You Need, and Connect with Others.
                 </p>
-                <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-500 lg:max-w-none">
+                <dl className="text-accent mt-10 max-w-xl space-y-8 text-base leading-7 lg:max-w-none">
                   {features2.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
-                      <dt className="inline font-semibold text-gray-900 dark:text-white">
-                        <feature.icon aria-hidden="true" className="absolute left-1 top-1 h-5 w-5 text-violet-500" />
+                      <dt className="text-main inline font-semibold">
+                        <feature.icon aria-hidden="true" className="text-primary absolute left-1 top-1 h-5 w-5" />
                         {feature.name}
                       </dt>{' '}
                       <dd className="inline">{feature.description}</dd>

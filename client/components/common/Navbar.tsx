@@ -37,7 +37,7 @@ export default function Navbar() {
               <Logo />
             </NavigationMenu.Item>
             <NavigationMenu.Item className="flex lg:hidden">
-              <Dialog.Trigger type="button" className="-m-2.5 inline-flex items-center justify-center p-2.5">
+              <Dialog.Trigger className="-m-2.5 inline-flex items-center justify-center p-2.5">
                 <Bars3Icon className="h-6 w-6" />
               </Dialog.Trigger>
             </NavigationMenu.Item>
@@ -76,9 +76,7 @@ export default function Navbar() {
                       </div>
                     </>
                   ) : (
-                    <NavigationMenu.Link className="" href={item.href}>
-                      {item.name}
-                    </NavigationMenu.Link>
+                    <NavigationMenu.Link href={item.href}>{item.name}</NavigationMenu.Link>
                   )}
                 </NavigationMenu.Item>
               ))}
@@ -104,7 +102,7 @@ export default function Navbar() {
                 <Logo />
               </div>
 
-              <div className='flex gap-4'>
+              <div className="flex gap-4">
                 <ThemeToggler />
                 <Dialog.Close type="button" className="-m-2.5 p-2.5">
                   <XMarkIcon className="text-main h-6 w-6" />
@@ -164,7 +162,6 @@ export default function Navbar() {
             >
               Log in
             </Link>
-
           </Dialog.Content>
         </Dialog.Portal>
       </Dialog.Root>

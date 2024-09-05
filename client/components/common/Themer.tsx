@@ -12,7 +12,7 @@ export default function ThemeToggler() {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger
         asChild
-        className="inline-flex h-auto w-fit items-center justify-center rounded-full bg-accent bg-accent-hover p-2 outline-none focus:shadow"
+        className="bg-accent bg-accent-hover inline-flex h-auto w-fit items-center justify-center rounded-full p-2 outline-none focus:shadow"
       >
         <button>
           <SunIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -21,14 +21,20 @@ export default function ThemeToggler() {
         </button>
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content 
-          side='left'
-          className="bg-accent text-main flex gap-1 z-50 text-sm data-[state=open]:animate-fadeIn rounded-3xl p-2 "
+        <DropdownMenu.Content
+          side="left"
+          className="bg-accent text-main z-50 flex gap-1 rounded-3xl p-2 text-sm data-[state=open]:animate-fadeIn"
           sideOffset={5}
         >
-          <DropdownMenu.Item className='p-2 bg-main bg-accent-hover rounded-2xl cursor-pointer' onClick={() => setTheme('light')}>Light</DropdownMenu.Item>
-          <DropdownMenu.Item className='p-2 bg-main bg-accent-hover rounded-2xl cursor-pointer' onClick={() => setTheme('dark')}>Dark</DropdownMenu.Item>
-          <DropdownMenu.Item className='p-2 bg-main bg-accent-hover rounded-2xl cursor-pointer' onClick={() => setTheme('system')}>System</DropdownMenu.Item>
+          <DropdownMenu.Item className="bg-main bg-accent-hover cursor-pointer rounded-2xl p-2" onClick={() => setTheme('light')}>
+            Light
+          </DropdownMenu.Item>
+          <DropdownMenu.Item className="bg-main bg-accent-hover cursor-pointer rounded-2xl p-2" onClick={() => setTheme('dark')}>
+            Dark
+          </DropdownMenu.Item>
+          <DropdownMenu.Item className="bg-main bg-accent-hover cursor-pointer rounded-2xl p-2" onClick={() => setTheme('system')}>
+            System
+          </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
     </DropdownMenu.Root>

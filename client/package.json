@@ -45,7 +45,10 @@
     "typescript": "^5"
   },
   "eslintConfig": {
-    "extends": ["next", "prettier"]
+    "extends": [
+      "next",
+      "prettier"
+    ]
   },
   "prettier": {
     "printWidth": 150,
