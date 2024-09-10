@@ -1,0 +1,179 @@
+{
+  "navbar": {
+    "items": [
+      {
+        "name": "Catalogue d'Entreprise",
+        "href": "/catalog"
+      },
+      {
+        "name": "Créer une Demande",
+        "href": "/demands",
+        "sub": [
+          {
+            "name": "Exportations",
+            "href": "/demands/exports",
+            "desc": "Trouvez et connectez-vous avec des acheteurs pour vos produits exportés."
+          },
+          {
+            "name": "Importations",
+            "href": "/demands/imports",
+            "desc": "Découvrez des opportunités pour importer des produits qui répondent à vos besoins."
+          }
+        ]
+      },
+      {
+        "name": "Actualités Commerciales",
+        "href": "/news"
+      },
+      {
+        "name": "Guide du Commerce",
+        "href": "/guide",
+        "sub": [
+          {
+            "name": "Incoterms",
+            "href": "/incoterms",
+            "desc": "Comprenez les termes du commerce international et leurs implications."
+          },
+          {
+            "name": "Assurance dans le Commerce",
+            "href": "/insurance",
+            "desc": "Découvrez les options d'assurance pour protéger vos transactions commerciales."
+          },
+          {
+            "name": "Méthodes de Paiement",
+            "href": "/payments",
+            "desc": "Explorez les méthodes de paiement sécurisées pour le commerce international."
+          }
+        ]
+      },
+      {
+        "name": "À Propos",
+        "href": "/about",
+        "sub": [
+          {
+            "name": "Qui Nous Sommes",
+            "href": "/whoweare",
+            "desc": "Découvrez la mission, la vision et l'équipe derrière notre entreprise."
+          },
+          {
+            "name": "Contactez-Nous",
+            "href": "/contact",
+            "desc": "Contactez-nous pour toute demande ou assistance."
+          },
+          {
+            "name": "FAQ",
+            "href": "/q&a",
+            "desc": "Trouvez des réponses aux questions fréquemment posées sur nos services."
+          }
+        ]
+      }
+    ],
+    "login": "Se Connecter"
+  },
+  "footer": {
+    "title": "Permettre aux entreprises de se connecter, de commercer et de prospérer grâce à l'intégration du code HS dans un marché unifié.",
+    "items": [
+      {
+        "title": "Solutions",
+        "subItems": [
+          { "name": "Support Client", "href": "#" },
+          { "name": "Documentation Commerciale", "href": "#" },
+          { "name": "Guides de Commerce", "href": "#" },
+          { "name": "FAQ", "href": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "subItems": [
+          { "name": "Annonces de Produits", "href": "#" },
+          { "name": "Annuaire des Fournisseurs", "href": "#" },
+          { "name": "Demander des Devis", "href": "#" },
+          { "name": "Assurance Commerciale", "href": "#" }
+        ]
+      },
+      {
+        "title": "Entreprise",
+        "subItems": [
+          { "name": "À Propos de Nous", "href": "#" },
+          { "name": "Actualités & Mises à Jour", "href": "#" },
+          { "name": "Opportunités de Carrière", "href": "#" },
+          { "name": "Kit Presse", "href": "#" },
+          { "name": "Partenariats", "href": "#" }
+        ]
+      },
+      {
+        "title": "Légal",
+        "subItems": [
+          { "name": "Politiques Commerciales", "href": "#" },
+          { "name": "Politique de Confidentialité", "href": "#" },
+          { "name": "Conditions Générales", "href": "#" }
+        ]
+      }
+    ],
+    "copyright": "Tous droits réservés."
+  },
+  "themer": {
+    "light": "clair",
+    "dark": "sombre",
+    "system": "système"
+  },
+  "homePage": {
+    "title": "Simplifier le Commerce B2B",
+    "subTitle": "Donner aux Entreprises les Moyens de Se Connecter, Échanger et Prospérer avec l'Intégration des Codes HS dans un Marché Unifié.",
+    "getStarted": "Commencez",
+    "learnMore": "En savoir plus",
+    "section_1": {
+      "title": "Decouvrez les Avantages de Comprice",
+      "subTitle": "Découvrez les Avantages qui Rendent le Commerce Fluide et Efficace sur Notre Marché.",
+      "features": [
+        {
+          "name": "Recherche Universelle de Code HS",
+          "description": "Recherchez facilement des produits à l'aide des codes HS, garantissant une catégorisation précise et la conformité avec les normes du commerce international.",
+          "icon": "barcode"
+        },
+        {
+          "name": "Découverte de Produits Efficace",
+          "description": "Trouvez facilement des produits et services spécifiques grâce à des filtres avancés, y compris les codes HS et les mots-clés, vous faisant gagner du temps.",
+          "icon": "bolt-lightning"
+        },
+        {
+          "name": "Communication Fluidifiée",
+          "description": "Interagissez avec acheteurs et vendeurs via notre système de messagerie intégré, facilitant les négociations et favorisant des relations commerciales solides.",
+          "icon": "satellite"
+        },
+        {
+          "name": "Portée Mondiale",
+          "description": "Développez votre entreprise en vous connectant avec une gamme diversifiée de sociétés à l'échelle mondiale, ouvrant ainsi la voie à de nouvelles opportunités.",
+          "icon": "globe"
+        }
+      ],
+      "login": "se connecter"
+    },
+    "section_2": {
+      "title": "Comment Ca Marche",
+      "subTitle": "Commencez en 3 Étapes Simples : Apprenez à Créer un Compte, Trouver ce Dont Vous Avez Besoin et Vous Connecter avec d'Autres.",
+      "features": [
+        {
+          "name": "Créez un Compte.",
+          "description": "Inscrivez-vous en quelques minutes pour commencer à commercer. Créez un compte personnalisé pour gérer votre profil, vos préférences et votre historique de transactions. Notre processus d'inscription facile vous permet de commencer rapidement sans tracas.",
+          "icon": "user-circle"
+        },
+        {
+          "name": "Parcourez & Recherchez.",
+          "description": "Utilisez des mots-clés ou des codes HS pour trouver les produits ou services exacts dont vous avez besoin. Notre fonctionnalité de recherche avancée vous permet de filtrer les résultats en fonction de critères spécifiques, simplifiant ainsi la localisation des articles correspondant à vos besoins commerciaux.",
+          "icon": "magnifying-glass"
+        },
+        {
+          "name": "Connectez & Négociez.",
+          "description": "Connectez-vous directement avec des vendeurs ou des acheteurs pour négocier les conditions. Notre système de messagerie intégré facilite une communication claire et efficace, vous aidant à discuter des détails, négocier les prix et établir des conditions facilement.",
+          "icon": "handshake"
+        }
+      ]
+    }
+  },
+  "notFoundPage": {
+    "title": "Page non trouvee.",
+    "subTitle": "Désolé, nous n'avons pas pu trouver la page que vous recherchez.",
+    "homeLink": "Retour à l'accueil"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "items": [
+      {
+        "name": "Company Catalog",
+        "href": "/catalog"
+      },
+      {
+        "name": "Create Demand",
+        "href": "/demands",
+        "sub": [
+          {
+            "name": "Exports",
+            "href": "/demands/exports",
+            "desc": "Find and connect with buyers for your export products."
+          },
+          {
+            "name": "Imports",
+            "href": "/demands/imports",
+            "desc": "Discover opportunities to import products that meet your needs."
+          }
+        ]
+      },
+      {
+        "name": "Trade News",
+        "href": "/news"
+      },
+      {
+        "name": "Trading Guide",
+        "href": "/guide",
+        "sub": [
+          {
+            "name": "Incoterms",
+            "href": "/incoterms",
+            "desc": "Understand international trade terms and their implications."
+          },
+          {
+            "name": "Insurance in Trade",
+            "href": "/insurance",
+            "desc": "Learn about insurance options to protect your trade transactions."
+          },
+          {
+            "name": "Payment Methods",
+            "href": "/payments",
+            "desc": "Explore secure payment methods for international trade."
+          }
+        ]
+      },
+      {
+        "name": "About Us",
+        "href": "/about",
+        "sub": [
+          {
+            "name": "Who We Are",
+            "href": "/whoweare",
+            "desc": "Get to know the mission, vision, and team behind our company."
+          },
+          {
+            "name": "Contact Us",
+            "href": "/contact",
+            "desc": "Reach out to us for any inquiries or support."
+          },
+          {
+            "name": "Q&A",
+            "href": "/q&a",
+            "desc": "Find answers to frequently asked questions about our services."
+          }
+        ]
+      }
+    ],
+    "login": "Login"
+  },
+  "footer": {
+    "title": "Empowering Businesses to Connect, Trade, and Thrive with HS Code Integration in a Unified Marketplace.",
+    "items": [
+      {
+        "title": "Solutions",
+        "subItems": [
+          { "name": "Customer Support", "href": "#" },
+          { "name": "Trade Documentation", "href": "#" },
+          { "name": "Trading Guides", "href": "#" },
+          { "name": "FAQs", "href": "#" }
+        ]
+      },
+      {
+        "title": "Support",
+        "subItems": [
+          { "name": "Product Listings", "href": "#" },
+          { "name": "Supplier Directory", "href": "#" },
+          { "name": "Request Quotations", "href": "#" },
+          { "name": "Trade Assurance", "href": "#" }
+        ]
+      },
+      {
+        "title": "Company",
+        "subItems": [
+          { "name": "About Us", "href": "#" },
+          { "name": "News & Updates", "href": "#" },
+          { "name": "Career Opportunities", "href": "#" },
+          { "name": "Press Kit", "href": "#" },
+          { "name": "Partnerships", "href": "#" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "subItems": [
+          { "name": "Trading Policies", "href": "#" },
+          { "name": "Privacy Policy", "href": "#" },
+          { "name": "Terms & Conditions", "href": "#" }
+        ]
+      }
+    ],
+    "copyright": "All rights reserved."
+  },
+  "themer": {
+    "light": "light",
+    "dark": "dark",
+    "system": "system"
+  },
+  "homePage": {
+    "title": "Simplifying B2B Trade",
+    "subTitle": "Empowering Businesses to Connect, Trade, and Thrive with HS Code Integration in a Unified Marketplace.",
+    "getStarted": "Get started",
+    "learnMore": "Learn more",
+    "section_1": {
+      "title": "Discover the Top Perks of Comprice",
+      "subTitle": "Experience the Benefits that Make Trading Seamless and Efficient on Our Marketplace.",
+      "features": [
+        {
+          "name": "Universal HS Code Search",
+          "description": "Effortlessly search for products using HS codes, ensuring accurate categorization and compliance with international trade standards",
+          "icon": "barcode"
+        },
+        {
+          "name": "Efficient Product Discovery",
+          "description": "Easily locate specific products and services with advanced filters, including HS codes and keywords, saving you time.",
+          "icon": "bolt-lightning"
+        },
+        {
+          "name": "Seamless Communication",
+          "description": "Engage with buyers and sellers through our integrated messaging system, facilitating negotiations and fostering strong business relationships.",
+          "icon": "satellite"
+        },
+        {
+          "name": "Global Reach",
+          "description": "Expand your business by connecting with a diverse range of companies globally, opening doors to new opportunities.",
+          "icon": "globe"
+        }
+      ]
+    },
+    "section_2": {
+      "title": "How it Works",
+      "subTitle": " Get Started in 3 Simple Steps: Learn How to Create an Account, Find What You Need, and Connect with Others.",
+      "features": [
+        {
+          "name": "Create an Account.",
+          "description": "Sign up in minutes to start trading. Create a personalized account to manage your profile, preferences, and transaction history. Our easy registration process ensures you can quickly get started without any hassle.",
+          "icon": "user-circle"
+        },
+        {
+          "name": "Browse & Search.",
+          "description": "Use keywords or HS Codes to find the exact products or services you need. Our advanced search functionality allows you to filter results based on specific criteria, making it simple to locate the items that match your business requirements.",
+          "icon": "magnifying-glass"
+        },
+        {
+          "name": "Connect & Negotiate.",
+          "description": "Directly connect with sellers or buyers to negotiate terms. Our built-in messaging system facilitates clear and effective communication, helping you to discuss details, negotiate prices, and establish terms with ease.",
+          "icon": "handshake"
+        }
+      ]
+    }
+  },
+  "notFoundPage": {
+    "title": "Page not found.",
+    "subTitle": "Sorry, we couldn't find the page you're looking for.",
+    "homeLink": "Go back home"
+  }
+}

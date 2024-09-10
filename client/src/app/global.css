@@ -49,6 +49,10 @@
 
   /*---- BACKGROUND COLORS ----*/
 
+  .bg-primary {
+    @apply bg-violet-500 dark:bg-violet-600;
+  }
+
   .bg-main {
     @apply bg-gray-100 dark:bg-gray-900;
   }
