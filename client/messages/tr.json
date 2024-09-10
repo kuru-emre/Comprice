@@ -1,0 +1,178 @@
+{
+  "navbar": {
+    "items": [
+      {
+        "name": "Sirket Kataloğu",
+        "href": "/catalog"
+      },
+      {
+        "name": "Talep Oluştur",
+        "href": "/demands",
+        "sub": [
+          {
+            "name": "İhracatlar",
+            "href": "/demands/exports",
+            "desc": "İhracat ürünleriniz için alıcıları bulun ve onlarla bağlantı kurun."
+          },
+          {
+            "name": "İthalatlar",
+            "href": "/demands/imports",
+            "desc": "İhtiyacınıza uygun ürünleri ithal etmek için fırsatları keşfedin."
+          }
+        ]
+      },
+      {
+        "name": "Ticaret Haberleri",
+        "href": "/news"
+      },
+      {
+        "name": "Ticaret Rehberi",
+        "href": "/guide",
+        "sub": [
+          {
+            "name": "Incoterms",
+            "href": "/incoterms",
+            "desc": "Uluslararası ticaret terimlerini ve bunların etkilerini anlayın."
+          },
+          {
+            "name": "Ticarette Sigorta",
+            "href": "/insurance",
+            "desc": "Ticaret işlemlerinizi korumak için sigorta seçeneklerini öğrenin."
+          },
+          {
+            "name": "Ödeme Yöntemleri",
+            "href": "/payments",
+            "desc": "Uluslararası ticaret için güvenli ödeme yöntemlerini keşfedin."
+          }
+        ]
+      },
+      {
+        "name": "Hakkımızda",
+        "href": "/about",
+        "sub": [
+          {
+            "name": "Biz Kimiz",
+            "href": "/whoweare",
+            "desc": "Şirketimizin misyonunu, vizyonunu ve ekibini tanıyın."
+          },
+          {
+            "name": "Bizimle İletişime Geçin",
+            "href": "/contact",
+            "desc": "Herhangi bir soru veya destek için bizimle iletişime geçin."
+          },
+          {
+            "name": "SSS",
+            "href": "/q&a",
+            "desc": "Hizmetlerimizle ilgili sıkça sorulan sorulara yanıtlar bulun."
+          }
+        ]
+      }
+    ],
+    "login": "Giris Yap"
+  },
+  "footer": {
+    "title": "Şirketlerin HS Kodu Entegrasyonu ile Birleşik Bir Pazarda Bağlantı Kurmalarını, Ticaret Yapmalarını ve Başarıyla Büyümelerini Sağlama.",
+    "items": [
+      {
+        "title": "Çözümler",
+        "subItems": [
+          { "name": "Müşteri Destek", "href": "#" },
+          { "name": "Ticaret Belgeleri", "href": "#" },
+          { "name": "Ticaret Rehberleri", "href": "#" },
+          { "name": "SSS", "href": "#" }
+        ]
+      },
+      {
+        "title": "Destek",
+        "subItems": [
+          { "name": "Ürün Listelemeleri", "href": "#" },
+          { "name": "Tedarikçi Rehberi", "href": "#" },
+          { "name": "Teklif Talebi", "href": "#" },
+          { "name": "Ticaret Garantisi", "href": "#" }
+        ]
+      },
+      {
+        "title": "Şirket",
+        "subItems": [
+          { "name": "Hakkımızda", "href": "#" },
+          { "name": "Haberler & Güncellemeler", "href": "#" },
+          { "name": "Kariyer Fırsatları", "href": "#" },
+          { "name": "Basın Kitleri", "href": "#" },
+          { "name": "Ortaklıklar", "href": "#" }
+        ]
+      },
+      {
+        "title": "Yasal",
+        "subItems": [
+          { "name": "Ticaret Politikaları", "href": "#" },
+          { "name": "Gizlilik Politikası", "href": "#" },
+          { "name": "Şartlar & Koşullar", "href": "#" }
+        ]
+      }
+    ],
+    "copyright": "Tüm hakları saklıdır."
+  },
+  "themer": {
+    "light": "açık",
+    "dark": "karanlık",
+    "system": "sistem"
+  },
+  "homePage": {
+    "title": "B2B Ticaretini Basitlestirin",
+    "subTitle": "HS Kodu Entegrasyonu ile Birleşik Bir Pazarda İşletmeleri Bağlayarak Ticaret ve Başarı Sağlamak.",
+    "getStarted": "Başlayın",
+    "learnMore": "Daha Fazla Bilgi Edinin",
+    "section_1": {
+      "title": "Comprice'in Ustun Avantajlarini Kesfedin",
+      "subTitle": "Pazarımızda Ticaretin Sorunsuz ve Verimli Hale Getiren Avantajları Deneyimleyin.",
+      "features": [
+        {
+          "name": "Evrensel HS Kodu Arama",
+          "description": "HS kodlarını kullanarak ürünleri zahmetsizce arayın, doğru kategorilendirme ve uluslararası ticaret standartlarına uyumluluk sağlayın.",
+          "icon": "barcode"
+        },
+        {
+          "name": "Etkili Ürün Keşfi",
+          "description": "HS kodları ve anahtar kelimeler dahil gelişmiş filtrelerle belirli ürün ve hizmetleri kolayca bulun, zamandan tasarruf edin.",
+          "icon": "bolt-lightning"
+        },
+        {
+          "name": "Kesintisiz İletişim",
+          "description": "Alıcılar ve satıcılarla entegre mesajlaşma sistemimiz aracılığıyla etkileşimde bulunun, müzakereleri kolaylaştırın ve güçlü ticari ilişkiler geliştirin.",
+          "icon": "satellite"
+        },
+        {
+          "name": "Küresel Ulaşım",
+          "description": "Dünya çapında çeşitli şirketlerle bağlantı kurarak işinizi genişletin, yeni fırsatların kapılarını açın.",
+          "icon": "globe"
+        }
+      ]
+    },
+    "section_2": {
+      "title": "Nasil Calisir",
+      "subTitle": "3 Basit Adımda Başlayın: Bir Hesap Oluşturmayı, İhtiyacınız Olanı Bulmayı ve Diğerleriyle Bağlantı Kurmayı Öğrenin.",
+      "features": [
+        {
+          "name": "Hesap Oluşturun.",
+          "description": "Ticaret yapmaya başlamak için dakikalar içinde kaydolun. Profilinizi, tercihlerinizi ve işlem geçmişinizi yönetmek için kişiselleştirilmiş bir hesap oluşturun. Kolay kayıt sürecimiz, hızlı bir başlangıç yapmanızı sağlar.",
+          "icon": "user-circle"
+        },
+        {
+          "name": "Göz Atın & Arayın.",
+          "description": "Anahtar kelimeler veya HS Kodları kullanarak tam olarak ihtiyacınız olan ürünleri veya hizmetleri bulun. Gelişmiş arama işlevimiz, sonuçları belirli kriterlere göre filtrelemenizi sağlar, bu da iş gereksinimlerinize uyan öğeleri bulmayı basit hale getirir.",
+          "icon": "magnifying-glass"
+        },
+        {
+          "name": "Bağlanın & Müzakere Edin.",
+          "description": "Şartları müzakere etmek için doğrudan satıcılar veya alıcılarla bağlantı kurun. Entegre mesajlaşma sistemimiz, ayrıntıları tartışmayı, fiyatları müzakere etmeyi ve şartları kolayca belirlemeyi kolaylaştırır.",
+          "icon": "handshake"
+        }
+      ]
+    }
+  },
+  "notFoundPage": {
+    "title": "Sayfa bulunamadi",
+    "subTitle": "Üzgünüz, aradığınız sayfayı bulamadık.",
+    "homeLink": "Ana sayfaya dön"
+  }
+}

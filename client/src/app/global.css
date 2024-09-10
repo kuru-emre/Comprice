@@ -28,7 +28,7 @@
   }
 
   .text-accent {
-    @apply text-gray-700 dark:text-gray-300;
+    @apply text-gray-600 dark:text-gray-400;
   }
 
   .text-accent-hover {
@@ -49,6 +49,10 @@
 
   /*---- BACKGROUND COLORS ----*/
 
+  .bg-primary {
+    @apply bg-violet-500 dark:bg-violet-600;
+  }
+
   .bg-main {
     @apply bg-gray-100 dark:bg-gray-900;
   }
@@ -62,11 +66,11 @@
   }
 
   .bg-accent {
-    @apply bg-gray-300 dark:bg-gray-700;
+    @apply bg-gray-200 dark:bg-gray-800;
   }
 
   .bg-accent-hover {
-    @apply hover:bg-gray-400 hover:dark:bg-gray-600;
+    @apply trans hover:bg-gray-300 hover:dark:bg-gray-700;
   }
 
   .bg-gradient-light {
