@@ -5,6 +5,11 @@
   "files.exclude": {
     "client/node_modules": true,
     "client/.next": true,
-    "client/next-env.d.ts": true
-  }
+    "client/next-env.d.ts": true,
+    ".devbox": true,
+    ".envrc": true
+  },
+  "i18n-ally.localesPaths": ["./client/messages"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.enabledFrameworks": ["next-intl"]
 }

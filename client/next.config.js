@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 
+const createNextIntlPlugin = require('next-intl/plugin');
+
+const withNextIntl = createNextIntlPlugin();
+
 const cspHeader = `
     default-src 'self';
     script-src 'self' 'unsafe-eval' 'unsafe-inline';
@@ -13,7 +17,7 @@ const cspHeader = `
     upgrade-insecure-requests;
 `;
 
-module.exports = {
+module.exports = withNextIntl({
   async headers() {
     return [
       {
@@ -27,6 +31,8 @@ module.exports = {
       },
     ];
   },
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
@@ -36,4 +42,4 @@ module.exports = {
       },
     ],
   },
-};
+});

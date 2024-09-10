@@ -4,9 +4,11 @@ import React from 'react';
 import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 import { useTheme } from 'next-themes';
+import { useTranslations } from 'next-intl';
 
 export default function ThemeToggler() {
   const { setTheme } = useTheme();
+  const t = useTranslations('themer');
 
   return (
     <DropdownMenu.Root>
@@ -27,13 +29,13 @@ export default function ThemeToggler() {
           sideOffset={5}
         >
           <DropdownMenu.Item className="bg-main bg-accent-hover cursor-pointer rounded-2xl p-2" onClick={() => setTheme('light')}>
-            Light
+            {t('light')}
           </DropdownMenu.Item>
           <DropdownMenu.Item className="bg-main bg-accent-hover cursor-pointer rounded-2xl p-2" onClick={() => setTheme('dark')}>
-            Dark
+            {t('dark')}
           </DropdownMenu.Item>
           <DropdownMenu.Item className="bg-main bg-accent-hover cursor-pointer rounded-2xl p-2" onClick={() => setTheme('system')}>
-            System
+            {t('system')}
           </DropdownMenu.Item>
         </DropdownMenu.Content>
       </DropdownMenu.Portal>
