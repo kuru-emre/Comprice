@@ -23,7 +23,7 @@
     "@radix-ui/react-separator": "^1.1.0",
     "framer-motion": "^11.3.29",
     "install": "^0.13.0",
-    "next": "^14.2.9",
+    "next": "^14.2.12",
     "next-intl": "^3.19.1",
     "next-sitemap": "^4.2.3",
     "next-themes": "^0.3.0",
