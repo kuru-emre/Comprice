@@ -14,7 +14,7 @@ export default function ThemeToggler() {
     <DropdownMenu.Root>
       <DropdownMenu.Trigger
         asChild
-        className="bg-accent bg-accent-hover inline-flex h-auto w-fit items-center justify-center rounded-full p-2 outline-none focus:shadow"
+        className="bg-accent bg-accent-hover inline-flex  m-auto w-[40px] h-[40px] items-center justify-center rounded-full p-2 outline-none focus:shadow"
       >
         <button>
           <SunIcon className="h-4 w-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

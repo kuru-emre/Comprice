@@ -1,4 +1,8 @@
 {
+  "localeSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, fr {🇫🇷 French} en {🇺🇸 English} tr {🇹🇷 Turkish} other {Unknown}}"
+  },
   "navbar": {
     "items": [
       {

@@ -1,4 +1,8 @@
 {
+  "localeSwitcher": {
+    "label": "Dili değiştir",
+    "locale": "{locale, select, fr {🇫🇷 Fransızca} en {🇺🇸 İngilizce} tr {🇹🇷 Türkçe} other {Bilinmeyen}}"
+  },
   "navbar": {
     "items": [
       {
