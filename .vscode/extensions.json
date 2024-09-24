@@ -1,0 +1,13 @@
+{
+  "recommendations": [
+    "mkhl.direnv",
+    "lokalise.i18n-ally",
+    "bradlc.vscode-tailwindcss",
+    "visualstudioexptteam.vscodeintel",
+    "esbenp.prettier-vscode",
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "dbaeumer.vscode-eslint"
+
+  ]
+}

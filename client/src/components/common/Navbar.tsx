@@ -13,6 +13,7 @@ import ThemeToggler from './Themer';
 import { useTranslations } from 'next-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faChevronDown, faChevronUp, faXmark } from '@fortawesome/free-solid-svg-icons';
+import LocaleSwitcher from '../i18n/LocaleSwitcher';
 
 const NavigationMotion = motion.create(NavigationMenu.Root);
 
@@ -100,6 +101,7 @@ export default function Navbar() {
               </div>
 
               <div className="flex gap-4">
+                <LocaleSwitcher />
                 <ThemeToggler />
                 <Dialog.Close type="button">
                   <FontAwesomeIcon icon={faXmark} className="text-main h-4 w-4" />

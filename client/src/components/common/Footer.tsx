@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Logo from './Logo';
 import ThemeToggler from './Themer';
+import LocaleSwitcher from '../i18n/LocaleSwitcher';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -33,8 +34,9 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-16 flex items-center border-t border-gray-300 pt-4 sm:mt-20 lg:mt-24 dark:border-gray-700">
+        <div className="mt-16 flex gap-3 items-center border-t border-gray-300 pt-4 sm:mt-20 lg:mt-24 dark:border-gray-700">
           <p className="text-accent flex-1 text-xs leading-5">&copy; 2024 Comprice World, Inc. {t('copyright')}</p>
+          <LocaleSwitcher />
           <ThemeToggler />
         </div>
       </div>

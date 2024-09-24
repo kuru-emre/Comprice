@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-const plugin = require('tailwindcss/plugin');
-
 module.exports = {
   content: ['./src/components/**/*.{ts,tsx}', './src/app/**/*.{ts,tsx}'],
   darkMode: 'selector',
@@ -73,12 +71,5 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    plugin(({ matchUtilities }) => {
-      matchUtilities({
-        perspective: (value) => ({
-          perspective: value,
-        }),
-      });
-    }),
   ],
 };
